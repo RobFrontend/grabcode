@@ -2,20 +2,340 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 
+
+Biel (#F8F9FA) 
+Granat (#1D3557)
+Złote linie, ramki lub ikony (#FFC300)
+Przyciski CTA: Pomarańczowy (#FF6F00) lub turkusowy (#00B4D8)
+Hover efekt: Delikatne rozjaśnienie akcentu np. na #FF8500 (pomarańczowy) lub #00CFE8 (turkusowy).
+*/
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background-color: #f8f9fa;
+  --background-color-opacity: rgba(248, 249, 250, 0.5);
+  --font-color: #1d3557;
+
+  --accent-color: #ffc300;
+  --cta-orange: #ff6f00;
+  --cta-turkus: #00b4d8;
+  --cta-orange-hov: #ff8500;
+  --cta-turkus-hov: #00cfe8;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background-color);
+  color: var(--font-color);
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 3.2rem;
+  padding-top: 9.6rem;
+}
+
+h1 {
+  font-size: 4.8rem;
+  line-height: 1.03;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3.2rem;
+  line-height: 1.05;
+  font-weight: 600;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.borderr {
+  border-bottom: 0.2rem solid var(--accent-color);
+}
+
+.shadow_light {
+  box-shadow: 0rem 0rem 2rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+/* HEADER ******************************************************* */
+.navigation {
+  height: 8rem;
+  background-color: var(--background-color-opacity);
+  padding: 0 3.2rem;
+}
+
+.navigation ul {
+  animation: navigationRev 1s ease-out;
+}
+
+@keyframes navigationRev {
+  0% {
+    transform: translateX(40rem);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateX(-1rem);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
+
+.navigation ul a {
+  font-size: 1.8rem;
+  border-bottom: 0.2rem solid #ffc40000;
+  transition: all 0.3s;
+}
+
+.navigation ul a:hover {
+  border-bottom: 0.2rem solid var(--accent-color);
+}
+
+.kv {
+  animation: kvrev 1s ease-out;
+}
+@keyframes kvrev {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* HERO ******************************************************* */
+
+.btn,
+.btn1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  transform: translateY(-0.00001rem);
+  box-shadow: 0rem 1rem 1.5rem 0.2rem rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.btn:hover,
+.btn1:hover {
+  transform: translateY(-0.6rem);
+  box-shadow: 0rem 1rem 2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+.btn:active,
+.btn1:active {
+  transform: translateY(-0.3rem);
+  box-shadow: 0rem 1rem 2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  padding: 1.2rem 2.4rem;
+  background-color: var(--accent-color);
+}
+.btn1 {
+  padding: 1rem 2.2rem;
+  border: 0.2rem solid var(--accent-color);
+  backdrop-filter: blur(0.6rem);
+}
+
+.logoheading {
+  letter-spacing: -2px;
+  font-size: 4.2rem;
+  background-image: linear-gradient(to right, #1d3557, #ffc300);
+
+  /* background-position: right; */
+  background-size: 250%;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Steelfish Rg", "helvetica neue", helvetica, arial, sans-serif;
+  font-weight: 800;
+  -webkit-font-smoothing: antialiased;
+  transition: all 1s;
+  animation: logoxd 8s infinite;
+}
+
+@keyframes logoxd {
+  0% {
+    background-position: right;
+  }
+  50% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.heroh1,
+.heroh2 {
+  text-shadow: 0px 0px 30px var(--background-color);
+}
+
+.heroh1 {
+  animation: h1rev 1s ease-out;
+  text-transform: uppercase;
+  letter-spacing: -0.2rem;
+}
+@keyframes h1rev {
+  0% {
+    transform: translateX(-20rem);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(1rem);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.heroh2 {
+  animation: h2rev 1s ease-out;
+  letter-spacing: -0.2rem;
+}
+@keyframes h2rev {
+  0% {
+    transform: translateX(20rem);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(-1rem);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* SERVICES ******************************************************* */
+.grid_3-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4.8rem;
+}
+
+.services-box {
+  /* border: 0.4rem solid var(--accent-color); */
+  box-shadow: 0rem 0.5rem 1rem 0.2rem rgba(0, 0, 0, 0.05);
+  transition: all 0.5s;
+  border-radius: 15px;
+  /* background-color: var(--background-color-opacity); */
+  background: url("../public/blury.svg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.services-box:hover {
+  /* transform: translateY(-0.6rem); */
+  box-shadow: 0rem 1rem 1.5rem 0.2rem rgba(0, 0, 0, 0.05);
+}
+
+.service {
+  display: grid;
+  padding: 2.4rem;
+  gap: 1.8rem;
+  transition: transform 0.5s;
+}
+
+.service:hover {
+  transform: translateY(-0.6rem);
+}
+
+.services-box p {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+.services-box ul {
+  display: grid;
+  gap: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.services-box li {
+  padding: 0 0.4rem;
+  border-bottom: 1px solid var(--background-color-opacity);
+}
+
+.services-box svg {
+  fill: var(--font-color);
+  margin: 1.8rem auto;
+  transition: fill 0.3s;
+  max-height: 12rem;
+  width: auto;
+  justify-self: center;
+}
+.services-box:hover svg {
+  fill: var(--accent-color);
+}
+
+.services-box h3 {
+  padding-top: 1.8rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* WHY US ******************************************************* */
+
+.whyus {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.8rem;
+}
+
+.whyus h3 {
+  font-size: 2.4rem;
+}
+
+.whyus p {
+  font-size: 1.8rem;
+}
+
+.whyus a {
+  text-align: center;
+
+  align-self: center;
+  justify-self: center;
+}
+
+.whyus img {
+  border-radius: 15px;
+  transform: scale(1.0001);
+  transition: transform 2s;
+}
+
+.whyus img:hover {
+  transform: scale(1.05);
+}
+
+.portfolio-box {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.whyus svg {
+  fill: var(--accent-color);
+  opacity: 0.1;
+  max-height: 80%;
+  width: auto;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
 }
