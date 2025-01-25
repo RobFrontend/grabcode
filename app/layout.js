@@ -33,6 +33,21 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+        {/* Google Analytics Script (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-ET0VR8H197"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-ET0VR8H197');
+            `,
+          }}
+        />
         {/* JSON-LD - Dane strukturalne */}
         <script
           type="application/ld+json"
