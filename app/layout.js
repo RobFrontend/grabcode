@@ -13,6 +13,8 @@ export const metadata = {
     "GrabCode Studio - Profesjonalne strony internetowe na miarę Twoich potrzeb. Tworzymy nowoczesne, responsywne i dopasowane do Twojego biznesu witryny, które przyciągają klientów.",
   keywords:
     "tworzenie stron internetowych, strony www, web development, nowoczesne strony, GrabCode Studio, Robert Grabowski, konin",
+  name: "google-site-verification",
+  content: "L3iCP03l4CsnPTApYYksUo8yPdzRdh6YL6z4-U3G8E8",
 };
 
 export default function RootLayout({ children }) {
