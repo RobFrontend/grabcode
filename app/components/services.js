@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Services() {
   return (
-    <section id="services">
+    <section id="uslugi">
       <div className="container">
         <h2>Usługi</h2>
         <div className="grid_3-cols p-8">

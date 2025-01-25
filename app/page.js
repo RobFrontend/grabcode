@@ -1,7 +1,3 @@
-import Image from "next/image";
-import KV from "@/public/kv.webp";
-import KVgrad from "@/public/kvgrad.webp";
-import KVmobgrad from "@/public/kvmobgrad.webp";
 import Hero from "./components/hero";
 import Services from "./components/services";
 

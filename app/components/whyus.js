@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function Whyus() {
   return (
-    <section>
+    <section id="dlaczegomy">
       <div className="container">
         <h2>Dlaczego my</h2>
         <div className="whyus p-8">

@@ -5,8 +5,8 @@ function Navigation() {
     <nav>
       <ul className="flex gap-12">
         <Link href="/">Strona Główna</Link>
-        <Link href="#services">Usługi</Link>
-        <Link href="/">Dlaczego my</Link>
+        <Link href="#uslugi">Usługi</Link>
+        <Link href="#dlaczegomy">Dlaczego my</Link>
         <Link href="/">Kontakt</Link>
       </ul>
     </nav>
