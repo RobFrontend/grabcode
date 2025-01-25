@@ -26,13 +26,16 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "WebSite",
+              "@type": "Organization",
               name: "GrabCode Studio",
               url: "https://grabcode.pl",
-              potentialAction: {
-                "@type": "SearchAction",
-                target: "https://grabcode.pl/?q={search_term_string}",
-                "query-input": "required name=search_term_string",
+              logo: "https://grabcode.pl/logo.png",
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+48 609 843 405",
+                contactType: "customer service",
+                areaServed: "PL",
+                availableLanguage: "Polish",
               },
             }),
           }}
