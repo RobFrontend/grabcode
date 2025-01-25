@@ -28,10 +28,10 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "GrabCode Studio",
-              url: "https://grabcode.com",
+              url: "https://grabcode.pl",
               potentialAction: {
                 "@type": "SearchAction",
-                target: "https://grabcode.com/?q={search_term_string}",
+                target: "https://grabcode.pl/?q={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
             }),
