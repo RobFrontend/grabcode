@@ -10,7 +10,11 @@ function Header() {
     <Headerreveal>
       <div className="flex justify-between items-center navigation ">
         <Link href="/">
-          <Image src={IconWhite} alt="logo" className="nav-logo" />
+          <Image
+            src={IconWhite}
+            alt="Logo GrabCode Studio tworzenie stron internetowych Robert Grabowski Konin Poznan Warszawa Legionowo"
+            className="nav-logo"
+          />
         </Link>
         <div className="max-[840px]:hidden">
           <Navigation />

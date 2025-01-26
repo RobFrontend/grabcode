@@ -1,5 +1,4 @@
 import Image from "next/image";
-import KV from "@/public/kv.webp";
 import KVgrad from "@/public/kvgrad.webp";
 import KVmobgrad from "@/public/kvmobgrad.webp";
 import Header from "./header";
@@ -45,7 +44,7 @@ function Hero() {
         objectFit="cover"
         objectPosition="center"
         className="-z-10 bgpath shadow_light kv max-[475px]:hidden"
-        alt="kv"
+        alt="Tworzenie stron internetowych biuro grabcode studio robert grabowski Konin Poznan Warszawa Legionowo"
       />
       <Image
         src={KVmobgrad}
@@ -53,25 +52,8 @@ function Hero() {
         objectFit="cover"
         objectPosition="center"
         className="-z-10 bgpath shadow_light kv min-[476px]:hidden"
-        alt="kv"
+        alt="Tworzenie stron internetowych biuro grabcode studio robert grabowski Konin Poznan Warszawa Legionowo"
       />
-
-      {/* <Image
-    src={KV}
-    fill
-    objectFit="cover"
-    objectPosition="center"
-    className="-z-10 bgpath"
-    alt="kv"
-  />
-  <Image
-    src={KV}
-    fill
-    objectFit="cover"
-    objectPosition="center"
-    className="-z-20 blur-md opacity-40"
-    alt="kv"
-  /> */}
     </div>
   );
 }

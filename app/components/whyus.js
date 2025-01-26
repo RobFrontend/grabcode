@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Portfolio from "@/public/portfolio.webp";
+import PortfolioGrabCodeStudioRobertGrabowski from "@/public/portfolio.webp";
 import Link from "next/link";
 
 function Whyus() {
@@ -41,7 +41,10 @@ function Whyus() {
             </svg>
           </div>
           <div className="portfolio-box">
-            <Image src={Portfolio} alt="portfolio" />
+            <Image
+              src={PortfolioGrabCodeStudioRobertGrabowski}
+              alt="portoflio projekty grabcode studio robert grabowski tworzenie stron internetowych Konin Poznan Warszawa Legionowo"
+            />
           </div>
         </div>
       </div>
