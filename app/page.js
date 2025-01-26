@@ -1,5 +1,7 @@
 import Hero from "./components/hero";
 import Kontakt from "./components/kontakt";
+import RevealingSections from "./components/revealingSections";
+
 import Services from "./components/services";
 
 import Whyus from "./components/whyus";
@@ -12,8 +14,12 @@ export default function Home() {
       </header>
       <main>
         <Services />
-        <Whyus />
-        <Kontakt />
+        <RevealingSections goinUp={true}>
+          <Whyus />
+        </RevealingSections>
+        <RevealingSections goinUp={true}>
+          <Kontakt />
+        </RevealingSections>
       </main>
     </>
   );
