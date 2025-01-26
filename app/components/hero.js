@@ -44,7 +44,15 @@ function Hero() {
         fill
         objectFit="cover"
         objectPosition="center"
-        className="-z-10 bgpath shadow_light kv"
+        className="-z-10 bgpath shadow_light kv max-[475px]:hidden"
+        alt="kv"
+      />
+      <Image
+        src={KVmobgrad}
+        fill
+        objectFit="cover"
+        objectPosition="center"
+        className="-z-10 bgpath shadow_light kv min-[476px]:hidden"
         alt="kv"
       />
 
