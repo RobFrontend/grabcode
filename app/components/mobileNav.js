@@ -18,10 +18,18 @@ function MobileNav() {
       {isOpen && (
         <nav className="navmb" onClick={() => setIsOpen(!isOpen)}>
           <ul className="grid justify-end  gap-12">
-            <Link href="/">Strona Główna</Link>
-            <Link href="#uslugi">Usługi</Link>
-            <Link href="#dlaczegomy">Dlaczego my</Link>
-            <Link href="#kontakt">Kontakt</Link>
+            <li>
+              <Link href="/">Strona Główna</Link>
+            </li>
+            <li>
+              <Link href="#uslugi">Usługi</Link>
+            </li>
+            <li>
+              <Link href="#dlaczegomy">Dlaczego my</Link>
+            </li>
+            <li>
+              <Link href="#kontakt">Kontakt</Link>
+            </li>
           </ul>
         </nav>
       )}
