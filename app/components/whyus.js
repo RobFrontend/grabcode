@@ -25,7 +25,11 @@ function Whyus() {
               <h3>4. Indywidualne podejście: </h3>
               <p>Każdy projekt dostosowany do Twoich potrzeb.</p>
             </div>
-            <Link href="/" className="btn">
+            <Link
+              href="https://portfolio-robfrontend.vercel.app/"
+              target="_blank"
+              className="btn"
+            >
               Portfolio
             </Link>
             <svg

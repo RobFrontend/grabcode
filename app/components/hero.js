@@ -9,8 +9,8 @@ function Hero() {
   return (
     <div className="h-screen">
       <Header />
-      <div className="grid max-w-[50%] h-full items-center max-[1480px]:max-w-[65%] max-[950px]:max-w-[80%] max-[800px]:max-w-[100%]">
-        <div className="px-8 pb-8 borderr">
+      <div className="grid max-w-[50%] h-full items-center max-[1480px]:max-w-[65%] max-[950px]:max-w-[80%] max-[800px]:max-w-[100%] max-sm:items-start">
+        <div className="px-8 pb-8 borderr max-sm:mt-[96px]">
           <div>
             <h1 className="mb-8 heroh1">
               <span>

@@ -1,3 +1,4 @@
+import Footer from "./components/footer";
 import Hero from "./components/hero";
 import Kontakt from "./components/kontakt";
 import RevealingSections from "./components/revealingSections";
@@ -21,6 +22,9 @@ export default function Home() {
         </RevealingSections>
         <RevealingSections goinUp={true}>
           <Kontakt />
+        </RevealingSections>
+        <RevealingSections goinUp={true}>
+          <Footer />
         </RevealingSections>
       </main>
     </>
