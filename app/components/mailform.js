@@ -1,30 +1,6 @@
 "use client";
 
-import { POST } from "../api/send/route";
-import { useState } from "react";
-
 export default function ContactForm() {
-  // const [text, setText] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [userName, setUserName] = useState("");
-  // // const [filename, setFilename] = useState("");
-  // function handleText(e) {
-  //   setText(e.target.value);
-  // }
-  // function handleMail(e) {
-  //   setEmail(e.target.value);
-  // }
-  // function handleName(e) {
-  //   setUserName(e.target.value);
-  // }
-  // function handleFile(e) {
-  //   setFilename(e.target.value);
-  // }
-  // function send() {
-  //   POST(email, userName, text);
-  //   console.log(email, userName, text);
-  // }
-
   async function handleSubmit(e) {
     e.preventDefault();
     const response = await fetch("https://api.web3forms.com/submit", {
@@ -34,7 +10,8 @@ export default function ContactForm() {
         Accept: "application/json",
       },
       body: JSON.stringify({
-        access_key: process.env.NEXT_PUBLIC_MAIL_API_KEY,
+        access_key: "271d3fee-df8a-43e0-b225-d8c1d203c567",
+        // access_key: process.env.NEXT_PUBLIC_MAIL_API_KEY,
 
         name: e.target.name.value,
         email: e.target.email.value,
