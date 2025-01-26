@@ -9,7 +9,7 @@ function Hero() {
   return (
     <div className="h-screen">
       <Header />
-      <div className="grid max-w-[50%] h-full items-center">
+      <div className="grid max-w-[50%] h-full items-center max-[1480px]:max-w-[65%] max-[950px]:max-w-[80%] max-[800px]:max-w-[100%]">
         <div className="px-8 pb-8 borderr">
           <div>
             <h1 className="mb-8 heroh1">
@@ -28,9 +28,9 @@ function Hero() {
               aby Twój biznes działał online efektywnie.
             </h3>
           </div>
-          <div className="flex gap-8 py-12 justify-center ">
+          <div className="flex gap-8 py-12 justify-center max-[550px]:flex-col max-[550px]:text-center">
             <Link href="#kontakt" className="btn1 btn-box">
-              Darmowa konsultacja
+              Bezpłatna konsultacja
             </Link>
             <Link href="#uslugi" className="btn btn-box">
               Sprawdź ofertę

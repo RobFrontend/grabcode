@@ -388,6 +388,33 @@ section h2 {
 
 /* Kontakt ************************************* */
 
+.contact-box h3 {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.contact-info {
+  display: grid;
+  gap: 0.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.contact-info {
+  font-size: 1.6rem;
+}
+
+.contact-info-box {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.contact-info-box svg {
+  max-height: 1.6rem;
+  width: 2.4rem;
+  fill: var(--accent-color);
+}
+
 .contactform {
   display: grid;
   gap: 2.4rem;
@@ -396,6 +423,8 @@ section h2 {
 .contactform input,
 .contactform textarea {
   padding: 0.6rem;
+  margin-top: 0.4rem;
+  border-radius: 10px;
 }
 .contactform textarea {
   font-size: 1.2rem;
@@ -405,10 +434,107 @@ section h2 {
 .contactform input:focus,
 .contactform textarea:focus {
   outline: none;
-  /* box-shadow: 0 0 0 0.2rem var(--accent-color); */
-  filter: drop-shadow(0 0 0.2rem var(--accent-color));
+  box-shadow: 0 0 0 0.2rem var(--accent-color);
+  /* filter: drop-shadow(0 0 0.2rem var(--accent-color)); */
 }
 
 .contactform label {
   font-size: 1.8rem;
+}
+
+@media (max-width: 80em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 69em) {
+  .grid_3-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+  }
+
+  .services-box {
+    max-width: 35rem;
+    justify-self: start;
+  }
+  .services-box:nth-child(1),
+  .services-box:nth-child(3),
+  .services-box:nth-child(5) {
+    max-width: 35rem;
+    justify-self: end;
+  }
+}
+
+@media (max-width: 64em) {
+  html {
+    font-size: 52.25%;
+  }
+}
+@media (max-width: 56em) {
+  .whyus {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+    justify-items: center;
+    gap: 3.2rem;
+    text-align: center;
+  }
+
+  .portfolio-box {
+    grid-row: 1;
+    max-width: 42rem;
+  }
+}
+
+@media (max-width: 36em) {
+  .grid_3-cols {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+  .services-box {
+    max-width: 35rem;
+    justify-self: center;
+  }
+  .services-box:nth-child(1),
+  .services-box:nth-child(3),
+  .services-box:nth-child(5) {
+    max-width: 35rem;
+    justify-self: center;
+  }
+  section {
+    padding: 2.4rem;
+    padding-top: 6.4rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
+}
+
+@media (max-width: 50em) {
+  html {
+    font-size: 50%;
+  }
+
+  h1,
+  .heroh2,
+  .heroh3 {
+    text-align: center;
+  }
+  h1 {
+    font-size: 3.6rem;
+  }
+
+  .heroh2 {
+    font-size: 2.4rem;
+  }
+  .heroh3 {
+    font-size: 2rem;
+  }
+
+  .btn,
+  .btn1 {
+    font-size: 1.8rem;
+  }
 }

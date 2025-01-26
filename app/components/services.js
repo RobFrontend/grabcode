@@ -5,7 +5,7 @@ function Services() {
     <section id="uslugi">
       <div className="container">
         <h2>Usługi</h2>
-        <div className="grid_3-cols p-8">
+        <div className="grid_3-cols p-8 max-sm:p-4">
           <div className="services-box">
             <div className="service">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">

@@ -7,7 +7,7 @@ function Whyus() {
     <section id="dlaczegomy">
       <div className="container">
         <h2>Dlaczego my</h2>
-        <div className="whyus p-8">
+        <div className="whyus p-8 max-sm:p-4">
           <div className="grid gap-4 relative">
             <div>
               <h3>1. Nowoczesne technologie:</h3>
