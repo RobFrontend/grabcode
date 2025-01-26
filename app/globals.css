@@ -235,17 +235,21 @@ section h2 {
 }
 
 .logoheading {
-  letter-spacing: -2px;
-  font-size: 4.2rem;
-  background-image: linear-gradient(to right, #1d3557, #ffc300);
+  /* background-image: linear-gradient(
+    to bottom right,
+    rgba(29, 53, 87, 0.2),
+    rgba(255, 196, 0, 0.2)
+  ); */
+  background-image: url(../public/blury.svg);
 
   /* background-position: right; */
-  background-size: 250%;
+  /* background-size: 250%; */
+  background-position: center;
 
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Steelfish Rg", "helvetica neue", helvetica, arial, sans-serif;
-  font-weight: 800;
+  font-weight: 800; */
   -webkit-font-smoothing: antialiased;
   transition: all 1s;
   animation: logoxd 8s infinite;
@@ -253,13 +257,16 @@ section h2 {
 
 @keyframes logoxd {
   0% {
-    background-position: right;
+    /* background-position: right; */
+    background-size: 250%;
   }
   50% {
-    background-position: left;
+    /* background-position: left; */
+    background-size: 550%;
   }
   100% {
-    background-position: right;
+    /* background-position: right; */
+    background-size: 250%;
   }
 }
 
@@ -327,10 +334,10 @@ section h2 {
   transition: all 0.5s;
   border-radius: 15px;
   /* background-color: var(--background-color-opacity); */
-  background: url("../public/blury.svg");
+  /* background: url("../public/blury.svg");
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 .services-box:hover {
   /* transform: translateY(-0.6rem); */
