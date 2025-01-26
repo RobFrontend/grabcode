@@ -13,7 +13,9 @@ export default function Home() {
         <Hero />
       </header>
       <main>
-        <Services />
+        <RevealingSections>
+          <Services />
+        </RevealingSections>
         <RevealingSections goinUp={true}>
           <Whyus />
         </RevealingSections>

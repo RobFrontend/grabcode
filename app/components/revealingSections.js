@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 
 function RevealingSections({ children, goinUp }) {
-  const upReveal = goinUp && "revealing";
+  const upReveal = goinUp ? "revealing" : "revealingopa";
   const aboutEl = useRef(null);
   const [isShow, setIsShow] = useState(false);
 
