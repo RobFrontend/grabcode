@@ -29,10 +29,11 @@ export default function ContactForm() {
     console.log(email, userName, text);
   }
   return (
-    <form action={send}>
+    <form action={send} className="grid gap-4">
       <label>
         Imię/Nazwa:
         <input
+          className="w-full h-24"
           type="text"
           name="name"
           required
@@ -43,6 +44,7 @@ export default function ContactForm() {
       <label>
         E-mail:
         <input
+          className="w-full h-24"
           type="email"
           name="email"
           required
@@ -52,6 +54,7 @@ export default function ContactForm() {
       <label>
         Wiadomość:
         <textarea
+          className="w-full h-24"
           name="message"
           required
           onChange={(e) => handleText(e)}
@@ -61,7 +64,9 @@ export default function ContactForm() {
         Dodaj plik:
         <input type="file" name="file" onChange={(e) => handleFile(e)} />
       </label> */}
-      <button type="submit">Wyślij</button>
+      <button type="submit" className="btn">
+        Wyślij
+      </button>
     </form>
   );
 }
