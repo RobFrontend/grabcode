@@ -3,8 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 
 function RevealingSections({ children, goinUp }) {
-  const upReveal =
-    goinUp && "translate-y-12 max-lg:translate-y-8 max-md:translate-y-6";
+  const upReveal = goinUp && "revealing";
   const aboutEl = useRef(null);
   const [isShow, setIsShow] = useState(false);
 
@@ -34,9 +33,7 @@ function RevealingSections({ children, goinUp }) {
   return (
     <div
       ref={aboutEl}
-      className={`${
-        isShow ? "opacity-100" : `opacity-0 ${upReveal}`
-      } transition-all duration-1000 backfaceVisibility`}
+      className={`${isShow ? `${upReveal}` : `opacity-0`}  backfaceVisibility`}
     >
       {children}
     </div>

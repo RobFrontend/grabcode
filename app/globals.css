@@ -351,6 +351,7 @@ section h2 {
 
 .whyus p {
   font-size: 1.8rem;
+  display: block;
 }
 
 .whyus a {
@@ -546,4 +547,19 @@ section h2 {
 .backfaceVisibility {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+}
+
+.revealing {
+  animation: revsection 0.75s ease-in;
+}
+
+@keyframes revsection {
+  0% {
+    transform: translateY(4rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 100;
+  }
 }
