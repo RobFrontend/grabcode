@@ -225,6 +225,13 @@ section h2 {
   animation: h1rev 1s ease-out;
   text-transform: uppercase;
   letter-spacing: -0.2rem;
+  line-height: 0.8;
+}
+
+.heroh1 span {
+  font-size: 3.2rem;
+  opacity: 0.5;
+  letter-spacing: -0.3rem;
 }
 @keyframes h1rev {
   0% {
@@ -255,6 +262,10 @@ section h2 {
   100% {
     transform: translateX(0);
   }
+}
+
+.heroh3 {
+  font-size: 2.4rem;
 }
 /* SERVICES ******************************************************* */
 .grid_3-cols {
