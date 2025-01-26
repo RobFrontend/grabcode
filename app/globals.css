@@ -385,3 +385,30 @@ section h2 {
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
 }
+
+/* Kontakt ************************************* */
+
+.contactform {
+  display: grid;
+  gap: 2.4rem;
+}
+
+.contactform input,
+.contactform textarea {
+  padding: 0.6rem;
+}
+.contactform textarea {
+  font-size: 1.2rem;
+  min-height: 20rem;
+}
+
+.contactform input:focus,
+.contactform textarea:focus {
+  outline: none;
+  /* box-shadow: 0 0 0 0.2rem var(--accent-color); */
+  filter: drop-shadow(0 0 0.2rem var(--accent-color));
+}
+
+.contactform label {
+  font-size: 1.8rem;
+}
