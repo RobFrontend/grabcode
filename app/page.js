@@ -23,7 +23,7 @@ export default function Home() {
         <RevealingSections goinUp={true}>
           <Kontakt />
         </RevealingSections>
-        <RevealingSections goinUp={true}>
+        <RevealingSections>
           <Footer />
         </RevealingSections>
       </main>
