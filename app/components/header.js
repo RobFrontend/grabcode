@@ -3,6 +3,7 @@ import Navigation from "./navigation";
 import IconWhite from "@/public/logowhiteround.png";
 import Link from "next/link";
 import Headerreveal from "./headerreveal";
+import MobileNav from "./mobileNav";
 
 function Header() {
   return (
@@ -11,7 +12,12 @@ function Header() {
         <Link href="/">
           <Image src={IconWhite} alt="logo" className="nav-logo" />
         </Link>
-        <Navigation />
+        <div className="max-[840px]:hidden">
+          <Navigation />
+        </div>
+        <div className="min-[841px]:hidden">
+          <MobileNav />
+        </div>
       </div>
     </Headerreveal>
   );

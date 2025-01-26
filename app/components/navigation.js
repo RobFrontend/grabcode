@@ -2,8 +2,8 @@ import Link from "next/link";
 
 function Navigation() {
   return (
-    <nav className="max-[940px]:hidden">
-      <ul className="flex gap-12">
+    <nav>
+      <ul className="flex gap-12 pcnav">
         <Link href="/">Strona Główna</Link>
         <Link href="#uslugi">Usługi</Link>
         <Link href="#dlaczegomy">Dlaczego my</Link>

@@ -84,7 +84,7 @@ section h2 {
   padding: 0 3.2rem;
 }
 
-.navigation ul {
+.pcnav {
   animation: navigationRev 1s ease-out;
 }
 
@@ -103,13 +103,13 @@ section h2 {
   }
 }
 
-.navigation ul a {
+.navigation .pcnav a {
   font-size: 1.8rem;
   border-bottom: 0.2rem solid #ffc40000;
   transition: all 0.3s;
 }
 
-.navigation ul a:hover {
+.navigation .pcnav a:hover {
   border-bottom: 0.2rem solid var(--accent-color);
 }
 .nav-active:link {
@@ -120,6 +120,53 @@ section h2 {
   max-width: 7.2rem;
   max-height: 7.2rem;
   animation: kvrev 1s ease-out;
+}
+
+/* MOBILE NAV */
+
+.navmb {
+  font-size: 1.8rem;
+  position: absolute;
+  top: 8rem;
+  right: 0;
+  height: fit-content;
+  width: fit-content;
+  padding: 2.4rem;
+  z-index: 99;
+  background-color: var(--accent-color);
+  animation: navrev 0.5s ease-out;
+}
+
+@keyframes navrev {
+  0% {
+    opacity: 0;
+    transform: translateX(3.2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.navmb a:hover {
+  border-bottom: 0.2rem solid rgba(255, 255, 255, 0.0001);
+  transition: all 0.5s;
+}
+.navmb a:hover {
+  border-bottom: 0.2rem solid var(--background-color);
+}
+
+.navbtn {
+  transition: all 0.5s;
+  fill: var(--font-color);
+  width: 100%;
+}
+
+.navbtn svg {
+  fill: var(--font-color);
+  transition: all 0.5s;
+  height: 3.2rem;
+  width: 3.6rem;
 }
 
 /* HERO ******************************************************* */
