@@ -235,16 +235,17 @@ section h2 {
 }
 
 .logoheading {
-  /* background-image: linear-gradient(
+  background-image: linear-gradient(
     to bottom right,
+    rgba(29, 53, 87, 0.4),
     rgba(29, 53, 87, 0.2),
-    rgba(255, 196, 0, 0.2)
-  ); */
-  background-image: url(../public/blury.svg);
+    rgba(255, 196, 0, 0.3)
+  );
+  /* background-image: url(../public/blury.svg); */
 
   /* background-position: right; */
-  /* background-size: 250%; */
-  background-position: center;
+  background-size: 200%;
+  /* background-position: left; */
 
   /* -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -252,21 +253,21 @@ section h2 {
   font-weight: 800; */
   -webkit-font-smoothing: antialiased;
   transition: all 1s;
-  animation: logoxd 8s infinite;
+  animation: logoxd 16s infinite;
 }
 
 @keyframes logoxd {
   0% {
-    /* background-position: right; */
-    background-size: 250%;
+    background-position: right;
+    /* background-size: 250%; */
   }
   50% {
-    /* background-position: left; */
-    background-size: 550%;
+    background-position: left;
+    /* background-size: 550%; */
   }
   100% {
-    /* background-position: right; */
-    background-size: 250%;
+    background-position: right;
+    /* background-size: 250%; */
   }
 }
 
