@@ -613,10 +613,10 @@ section h2 {
 }
 
 .revealing {
-  animation: revsection 0.75s ease-in;
+  animation: revsection 0.75s ease-out;
 }
 .revealingopa {
-  animation: revsectionopa 0.75s ease-in;
+  animation: revsectionopa 0.75s ease-out;
 }
 
 @keyframes revsection {
