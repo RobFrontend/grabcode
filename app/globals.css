@@ -23,6 +23,23 @@ Hover efekt: Delikatne rozjaśnienie akcentu np. na #FF8500 (pomarańczowy) lub 
   --cta-turkus-hov: #00cfe8;
 }
 
+[data-theme="dark"] {
+  --background-color: #1d3557;
+  --background-color-opacity: rgba(29, 53, 87, 0.5);
+  --font-color: #f8f9fa;
+}
+
+.thememode {
+  transition: all 0.3s;
+  font-size: 1rem;
+  padding: 0.6rem;
+  border-radius: 150px;
+  background-color: var(--font-color);
+}
+.thememode:hover {
+  background-color: var(--background-color);
+}
+
 *,
 *::after,
 *::before {
@@ -481,6 +498,7 @@ section h2 {
   padding: 0.6rem;
   margin-top: 0.4rem;
   border-radius: 10px;
+  color: #1d3557;
 }
 .contactform textarea {
   font-size: 1.2rem;
@@ -592,6 +610,7 @@ section h2 {
 
   .heroh2 {
     font-size: 2.4rem;
+    letter-spacing: -1px;
   }
   .heroh3 {
     font-size: 2rem;

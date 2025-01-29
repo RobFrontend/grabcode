@@ -4,6 +4,7 @@ import IconWhite from "@/public/logowhiteround.png";
 import Link from "next/link";
 import Headerreveal from "./headerreveal";
 import MobileNav from "./mobileNav";
+import ThemeToggle from "./ThemeToggle";
 
 function Header() {
   return (
@@ -16,10 +17,12 @@ function Header() {
             className="nav-logo"
           />
         </Link>
-        <div className="max-[840px]:hidden">
+        <div className="max-[840px]:hidden flex gap-12">
           <Navigation />
+          <ThemeToggle />
         </div>
-        <div className="min-[841px]:hidden">
+        <div className="min-[841px]:hidden flex gap-8">
+          <ThemeToggle />
           <MobileNav />
         </div>
       </div>
