@@ -1,5 +1,6 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "./context/ThemeContext";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -80,7 +81,7 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
 
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

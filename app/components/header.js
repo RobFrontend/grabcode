@@ -1,21 +1,17 @@
-import Image from "next/image";
 import Navigation from "./navigation";
-import IconWhite from "@/public/logowhiteround.png";
+
 import Link from "next/link";
 import Headerreveal from "./headerreveal";
 import MobileNav from "./mobileNav";
 import ThemeToggle from "./ThemeToggle";
+import Logotheme from "./logotheme";
 
 function Header() {
   return (
     <Headerreveal>
       <div className="flex justify-between items-center navigation ">
         <Link href="/">
-          <Image
-            src={IconWhite}
-            alt="Logo GrabCode Studio tworzenie stron internetowych Robert Grabowski Konin Poznan Warszawa Legionowo"
-            className="nav-logo"
-          />
+          <Logotheme />
         </Link>
         <div className="max-[840px]:hidden flex gap-12">
           <Navigation />

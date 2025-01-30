@@ -17,7 +17,6 @@ function Navigation() {
         <li>
           <Link href="#kontakt">Kontakt</Link>
         </li>
-        {/* <ThemeToggle /> */}
       </ul>
     </nav>
   );
