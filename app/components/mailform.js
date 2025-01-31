@@ -28,7 +28,6 @@ export default function ContactForm() {
         Accept: "application/json",
       },
       body: JSON.stringify({
-        // access_key: "271d3fee-df8a-43e0-b225-d8c1d203c567",
         access_key: process.env.NEXT_PUBLIC_MAIL_API_KEY,
 
         // name: e.target.name.value,
