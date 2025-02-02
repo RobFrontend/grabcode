@@ -23,7 +23,7 @@ function Hero() {
               budują wizerunek Twojej marki
             </h2>
             <h3 className="heroh2 heroh3">
-              Od pomysłu do gotowej strony<br></br>- zadbamy o każdy szczegół,
+              Od pomysłu do gotowej strony<br></br>- zadbam o każdy szczegół,
               aby Twój biznes działał online efektywnie.
             </h3>
           </div>

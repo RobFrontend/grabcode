@@ -17,7 +17,7 @@ function Services() {
                   Projektowanie i tworzenie <br></br>stron internetowych
                 </h3>
                 <p>
-                  Projektujemy nowoczesne, responsywne i intuicyjne strony
+                  Projektuję nowoczesne, responsywne i intuicyjne strony
                   internetowe, które dostosowują się do wszystkich urządzeń -od
                   telefonów po komputery.
                 </p>
@@ -38,7 +38,7 @@ function Services() {
                 <h3>Landing Pages</h3>
 
                 <p>
-                  Tworzymy wysokowydajne strony typu landing page, które
+                  Tworzę wysokowydajne strony typu landing page, które
                   maksymalizują konwersję Twojej kampanii marketingowej.
                 </p>
                 <ul>
@@ -64,7 +64,7 @@ function Services() {
                 <h3>Strony z blogiem</h3>
 
                 <p>
-                  Tworzymy strony blogowe z intuicyjnymi systemami zarządzania
+                  Tworzę strony blogowe z intuicyjnymi systemami zarządzania
                   treścią (CMS), które pozwalają Ci publikować i edytować wpisy
                   z łatwością.
                 </p>
@@ -90,7 +90,7 @@ function Services() {
                 </h3>
 
                 <p>
-                  Zoptymalizujemy Twoją stronę pod kątem wyszukiwarek i
+                  Zoptymalizuję Twoją stronę pod kątem wyszukiwarek i
                   wydajności, aby osiągała najwyższe pozycje w Google.
                 </p>
                 <ul>
@@ -112,7 +112,7 @@ function Services() {
                 </h3>
 
                 <p>
-                  Pomagamy utrzymać i rozwijać istniejące strony, wprowadzając
+                  Pomagam utrzymać i rozwijać istniejące strony, wprowadzając
                   ulepszenia i rozwiązując problemy techniczne.
                 </p>
                 <ul>
@@ -134,7 +134,7 @@ function Services() {
                 </h3>
 
                 <p>
-                  Tworzymy dedykowane rozwiązania z wykorzystaniem API i
+                  Tworzę dedykowane rozwiązania z wykorzystaniem API i
                   customowych funkcji dostosowanych do Twoich potrzeb
                   biznesowych.
                 </p>

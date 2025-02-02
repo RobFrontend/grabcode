@@ -78,6 +78,18 @@ h2 {
   font-weight: 600;
 }
 
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+  line-height: 1.05;
+}
+h4 span {
+  font-size: 1rem;
+}
+
 section h2 {
   margin-bottom: 2.4rem;
 }
@@ -201,7 +213,8 @@ section h2 {
 }
 
 .btn,
-.btn1 {
+.btn1,
+.btn2 {
   font-size: 2.4rem;
   font-weight: 600;
   transition: all 0.3s;
@@ -214,13 +227,17 @@ section h2 {
   transform: translateY(-0.6rem);
   box-shadow: 0rem 1rem 2rem 0.5rem rgba(0, 0, 0, 0.1);
 }
-.btn:active,
-.btn1:active {
+.btn2:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0rem 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+.btn:active {
   transform: translateY(-0.3rem);
   box-shadow: 0rem 1rem 2rem 0.4rem rgba(0, 0, 0, 0.1);
 }
 
-.btn {
+.btn,
+.btn2 {
   padding: 1.2rem 2.4rem;
   background-color: var(--accent-color);
 }
@@ -228,6 +245,10 @@ section h2 {
   padding: 1rem 2.2rem;
   border: 0.2rem solid var(--accent-color);
   backdrop-filter: blur(0.6rem);
+}
+.btn2 {
+  box-shadow: 0rem 0rem 1rem 0rem rgba(0, 0, 0, 0.1);
+  font-size: 1.8rem;
 }
 
 .btn-box {
@@ -517,6 +538,145 @@ section h2 {
   font-size: 1.8rem;
 }
 
+.backfaceVisibility {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.revealing {
+  animation: revsection 0.75s ease-out;
+}
+.revealingopa {
+  animation: revsectionopa 0.75s ease-out;
+}
+
+@keyframes revsection {
+  0% {
+    transform: translateY(4rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 100;
+  }
+}
+@keyframes revsectionopa {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+/* //// CENNIK ///////////////////////////////////// */
+
+.cennik-box-bg {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(248, 249, 250, 0.2),
+    rgba(29, 53, 87, 0.05),
+    rgba(255, 196, 0, 0.1)
+  );
+
+  background-size: 200%;
+
+  -webkit-font-smoothing: antialiased;
+  transition: all 1s;
+  animation: logoxd 16s infinite;
+}
+
+.cennik-info-box {
+  box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.075);
+  padding: 2.4rem;
+  margin-bottom: 1.8rem;
+  transition: transform 0.3s;
+}
+
+.cennik-info-box:hover {
+  transform: translateY(-0.4rem);
+}
+
+.cennik-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4.8rem;
+  justify-content: space-between;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+}
+
+.cennik-box {
+  display: grid;
+  gap: 2rem;
+  padding: 2.4rem 1.8rem;
+  /* border: 0.2rem solid var(--font-color); */
+  border-radius: 10px;
+  box-shadow: 0 0.4rem 1.5rem 0.2rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.cennik-box-best {
+  position: relative;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(248, 249, 250, 0.3),
+    rgba(29, 53, 87, 0.15),
+    rgba(255, 196, 0, 0.5)
+  );
+
+  background-size: 200%;
+
+  -webkit-font-smoothing: antialiased;
+  transition: all 1s;
+  animation: logoxd 16s infinite;
+}
+.cennik-box-best h4 {
+  z-index: 2;
+}
+.cennik-box-best .best-mark {
+  position: absolute;
+  height: 1.5rem;
+  width: 200rem;
+  background-color: var(--accent-color);
+  top: 1rem;
+  right: -96rem;
+  transform: rotate(45deg);
+  transition: all 0.5s;
+}
+.cennik-box-best:hover .best-mark {
+  transform: rotate(0deg) translateY(-2rem);
+}
+
+.cennik-box:hover {
+  transform: translateY(-0.6rem);
+}
+
+.cennik-box .ul-lg {
+  display: grid;
+  gap: 1.6rem;
+  padding: 0 0.8rem;
+  font-size: 1.2rem;
+}
+.ul-lg svg {
+  height: 1.4rem;
+  width: 1.4rem;
+  fill: var(--accent-color);
+}
+.cennik-box .ul-sm {
+  display: grid;
+  gap: 1.2rem;
+  padding: 0 1.6rem;
+  font-size: 1rem;
+}
+
+.cennik-box p {
+  font-size: 1.4rem;
+}
+
+/* RESPO */
+
 @media (max-width: 80em) {
   html {
     font-size: 56.25%;
@@ -561,6 +721,13 @@ section h2 {
     grid-row: 1;
     max-width: 42rem;
   }
+
+  .cennik-boxes {
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.8rem;
+  }
 }
 
 @media (max-width: 36em) {
@@ -584,6 +751,11 @@ section h2 {
     padding-top: 6.4rem;
     padding-left: 1.8rem;
     padding-right: 1.8rem;
+  }
+}
+@media (max-width: 32em) {
+  .cennik-boxes {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -624,36 +796,5 @@ section h2 {
   .btn,
   .btn1 {
     font-size: 1.8rem;
-  }
-}
-
-.backfaceVisibility {
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-}
-
-.revealing {
-  animation: revsection 0.75s ease-out;
-}
-.revealingopa {
-  animation: revsectionopa 0.75s ease-out;
-}
-
-@keyframes revsection {
-  0% {
-    transform: translateY(4rem);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0rem);
-    opacity: 100;
-  }
-}
-@keyframes revsectionopa {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100;
   }
 }

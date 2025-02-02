@@ -1,5 +1,4 @@
 import Link from "next/link";
-import ThemeToggle from "./ThemeToggle";
 
 function Navigation() {
   return (
@@ -9,13 +8,16 @@ function Navigation() {
           <Link href="/">Strona Główna</Link>
         </li>
         <li>
-          <Link href="#uslugi">Usługi</Link>
+          <Link href="/#uslugi">Usługi</Link>
         </li>
         <li>
-          <Link href="#dlaczegomy">Dlaczego my</Link>
+          <Link href="/#dlaczegomy">Dlaczego my</Link>
         </li>
         <li>
-          <Link href="#kontakt">Kontakt</Link>
+          <Link href="/cennik">Cennik</Link>
+        </li>
+        <li>
+          <Link href="/#kontakt">Kontakt</Link>
         </li>
       </ul>
     </nav>
