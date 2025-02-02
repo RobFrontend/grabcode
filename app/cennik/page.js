@@ -56,8 +56,8 @@ function Page() {
               <div className="cennik-info-box grid gap-4">
                 <h4>
                   Poniższe ceny są bardziej przykładem. Każdy projekt wymaga
-                  własnej wyceny dlatego serdecznie zapraszamy do kontaktu w
-                  celu darmowej wyceny Twojej strony internetowej
+                  własnej wyceny dlatego zapraszam do kontaktu w celu darmowej
+                  wyceny Twojej strony internetowej
                 </h4>
                 <Link className="btn2 w-fit justify-self-end" href="/#kontakt">
                   Darmowa wycena
