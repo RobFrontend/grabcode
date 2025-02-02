@@ -50,7 +50,7 @@ function Page() {
                     strony
                   </h4>
                   <h4>-Pomysł na design Twojej strony internetowej</h4>
-                  <h4>-Pomoc w wyborze dostawcy domeny/serwa</h4>
+                  <h4>-Pomoc w wyborze dostawcy domeny/serwera</h4>
                 </div>
               </div>
               <div className="cennik-info-box grid gap-4">
