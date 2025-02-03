@@ -11,6 +11,16 @@
   <loc>https://www.grabcode.pl/</loc>
   <lastmod>2025-01-25T01:09:06+00:00</lastmod>
 </url>
+<url>
+  <loc>https://www.grabcode.pl/cennik</loc>
+  <lastmod>2024-02-03</lastmod>
+</url>
+
+<url>
+   <loc>https://www.grabcode.pl/icon.png</loc>
+   <lastmod>2024-02-03</lastmod>
+   <priority>0.8</priority>
+</url>
 
 
 </urlset>
