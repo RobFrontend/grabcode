@@ -22,6 +22,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pl">
       <head>
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="robots" content="index, follow" />
+        <link rel="icon" type="image/png" href="/icon.png" />
         {/* Google Tag Manager Script */}
         <script
           dangerouslySetInnerHTML={{
@@ -58,7 +62,7 @@ export default function RootLayout({ children }) {
               "@type": "Organization",
               name: "GrabCode Studio",
               url: "https://grabcode.pl",
-              logo: "https://grabcode.pl/logo.png",
+              logo: "/icon.png",
               contactPoint: {
                 "@type": "ContactPoint",
                 telephone: "+48 609 843 405",
