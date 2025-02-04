@@ -188,11 +188,11 @@ function Page() {
                 </p>
                 <ul className="ul-lg">
                   <li>Większa ilość podstron</li>
-                  <li>Autoryzacja</li>
                   <li>
                     Filtrowanie, sortowanie, checkboxy <br></br>(np. sortowanie
                     postów bloga)
                   </li>
+                  <li>Integracja z API/bazą danych</li>
                   <li>
                     Interaktywne komponenty <br></br>
                     (Wykresy, porównania, mini gry, karuzele)
@@ -202,6 +202,7 @@ function Page() {
                     stronie)
                   </li>
                   <li>Wybór kolorystyki (po mojej stronie)</li>
+                  <li>Autoryzacja</li>
                   <li>Posiadanie właśnych użytkowników</li>
                   <li>Płatności (wkrótce)</li>
                   <li>Sklep z płatnościami (wkrótce)</li>
