@@ -192,6 +192,7 @@ function Page() {
                     Filtrowanie, sortowanie, checkboxy <br></br>(np. sortowanie
                     postów bloga)
                   </li>
+                  <li>Formularz kontaktowy</li>
                   <li>Integracja z API/bazą danych</li>
                   <li>
                     Interaktywne komponenty <br></br>
