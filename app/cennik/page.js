@@ -187,6 +187,7 @@ function Page() {
                   oto kilka z nich:
                 </p>
                 <ul className="ul-lg">
+                  <li>Edycja/prowadzenie istniejącej strony</li>
                   <li>Większa ilość podstron</li>
                   <li>
                     Filtrowanie, sortowanie, checkboxy <br></br>(np. sortowanie
