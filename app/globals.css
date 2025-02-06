@@ -629,7 +629,7 @@ section h2 {
   background-size: 200%;
 
   -webkit-font-smoothing: antialiased;
-  transition: all 1s;
+  transition: all 0.5s;
   animation: logoxd 16s infinite;
 }
 .cennik-box-best h4 {
@@ -643,7 +643,7 @@ section h2 {
   top: 1rem;
   right: -96rem;
   transform: rotate(45deg);
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 .cennik-box-best:hover .best-mark {
   transform: rotate(0deg) translateY(-2rem);
