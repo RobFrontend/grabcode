@@ -7,6 +7,10 @@ import RevealingSections from "../components/revealingSections";
 import Biglogotheme from "../components/biglogotheme";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Cennik",
+};
+
 function Page() {
   return (
     <>

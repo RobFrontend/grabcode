@@ -8,7 +8,7 @@ const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 export const metadata = {
-  title: "GrabCode Studio",
+  title: { template: "%s / GrabCode Studio", default: "Witaj / GrabCode" },
   description:
     "GrabCode Studio - Profesjonalne strony internetowe na miarę Twoich potrzeb. Tworzymy nowoczesne, responsywne i dopasowane do Twojego biznesu witryny, które przyciągają klientów.",
   keywords:
