@@ -8,7 +8,7 @@ function Navigation() {
           <Link href="/">Strona Główna</Link>
         </li>
         <li>
-          <Link href="/#uslugi">Usługi</Link>
+          <Link href="/uslugi">Usługi</Link>
         </li>
         <li>
           <Link href="/#dlaczegomy">Dlaczego my</Link>

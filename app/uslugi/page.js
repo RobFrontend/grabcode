@@ -38,13 +38,13 @@ function Page() {
         <div className="grid justify-center py-2">
           <Biglogotheme />
         </div>
-        <div className="pb-12">
+        <div className="pb-32">
           <RevealingSections goinUp={true}>
             <div className="container px-8 max-md:px-6">
-              <h2 className="text-center pb-12">Strony typu Landing Page</h2>
+              <h2 className="text-center pb-12">Strony Landing Page</h2>
               <div className="site-boxes">
                 <div className="site-box">
-                  <h3 className="text-center">Przykładowy Landing Page</h3>
+                  <h3 className="text-center">Zwięzłość</h3>
                   <div className="site-img-box">
                     <Image src={LPcity} alt="przyklad" />
                   </div>
@@ -73,7 +73,7 @@ function Page() {
                   </Link>
                 </div>
                 <div className="site-box">
-                  <h3 className="text-center">Rozbudowany Landing Page</h3>
+                  <h3 className="text-center">Przestronność</h3>
                   <div className="site-img-box">
                     <Image src={LPkarkonosze} alt="przyklad" />
                   </div>
@@ -101,7 +101,7 @@ function Page() {
                   </Link>
                 </div>
                 <div className="site-box">
-                  <h3 className="text-center">Portfolio z karuzelami</h3>
+                  <h3 className="text-center">Portfolio</h3>
                   <div className="site-img-box">
                     <Image src={LPportfolio} alt="przyklad" />
                   </div>
@@ -115,8 +115,9 @@ function Page() {
                     </Link>{" "}
                     zawiera nawigację, Hero (pierwszoplanowy obrazek oraz tytuł
                     i informacje), odnoścniki do social mediów, sekcję
-                    przedstawiającą autora, dwie karuzele projektów oraz
-                    kontakt. Odwiedź stronę aby doświadczyć pełni efektów.
+                    przedstawiającą przykładową historię działalności autora,
+                    dwie karuzele dla sekcji projektów oraz kontakt jako stopkę.
+                    Odwiedź stronę aby doświadczyć pełni efektów.
                   </p>
 
                   <Link
@@ -128,7 +129,7 @@ function Page() {
                   </Link>
                 </div>
                 <div className="site-box">
-                  <h3 className="text-center">Specjalne funkcjonalności</h3>
+                  <h3 className="text-center">Efektowność</h3>
                   <div className="site-img-box">
                     <Image src={LPcarousels} alt="przyklad" />
                   </div>
@@ -156,7 +157,149 @@ function Page() {
                   </Link>
                 </div>
               </div>
-            </div>{" "}
+            </div>
+          </RevealingSections>
+        </div>
+
+        <div className="pb-32">
+          <RevealingSections goinUp={true}>
+            <div className="container px-8 max-md:px-6">
+              <h2 className="text-center pb-12">Większe strony internetowe</h2>
+              <div className="site-boxes">
+                <div className="site-box-vid">
+                  <h3 className="text-center">Strona z blogiem</h3>
+                  <div>
+                    <video controls preload="yes">
+                      <source src="videos/BlogWebsite.mp4" type="video/mp4" />
+                      Twoja przeglądarka nie obsługuje Video Tagu.
+                    </video>
+                  </div>
+                  <p className="px-4">
+                    Strona{" "}
+                    <Link
+                      href="https://www.jeszczestronaalbosto.pl/"
+                      target="_blank"
+                    >
+                      działalności z blogiem
+                    </Link>{" "}
+                    zawiera stronę główną, kilka podstawowych podstron -
+                    podstronę o autorze, współpracę, kontakt z formularzem
+                    e-mailowym - oraz dodatkowo blog. Odwiedź stronę aby
+                    doświadczyć pełni efektów.
+                  </p>
+
+                  <Link
+                    href="https://www.jeszczestronaalbosto.pl/"
+                    target="_blank"
+                    className="linkToPage px-2"
+                  >
+                    Odwiedź stronę dla lepszego efektu
+                  </Link>
+                </div>
+                <div className="site-box-vid">
+                  <h3 className="text-center">Rozbudowane Portfolio</h3>
+                  <div>
+                    <video controls preload="yes">
+                      <source src="videos/Portfolio.mp4" type="video/mp4" />
+                      Twoja przeglądarka nie obsługuje Video Tagu.
+                    </video>
+                  </div>
+                  <p className="px-4">
+                    Strona{" "}
+                    <Link
+                      href="https://portfolio-robfrontend.vercel.app/"
+                      target="_blank"
+                    >
+                      rozbudowanego Portfolio
+                    </Link>{" "}
+                    zawiera kilka podstron, a zatem bardziej szczegółowo
+                    przedstawione informacje o autorze i jego projektach niż w
+                    przypadku Portfolio typu Landing Page. Odwiedź stronę aby
+                    doświadczyć pełni efektów.
+                  </p>
+
+                  <Link
+                    href="https://portfolio-robfrontend.vercel.app/"
+                    target="_blank"
+                    className="linkToPage px-2"
+                  >
+                    Odwiedź stronę dla lepszego efektu
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </RevealingSections>
+        </div>
+
+        <div className="pb-12">
+          <RevealingSections goinUp={true}>
+            <div className="container px-8 max-md:px-6">
+              <h2 className="text-center pb-12">Panele edycji treści</h2>
+              <div className="site-boxes">
+                <div className="site-box-vid">
+                  <h3 className="text-center">Blog z CMS</h3>
+                  <div>
+                    <video controls preload="yes">
+                      <source src="videos/CMSblog.mp4" type="video/mp4" />
+                      Twoja przeglądarka nie obsługuje Video Tagu.
+                    </video>
+                  </div>
+                  <p className="px-4">
+                    Strona{" "}
+                    <Link
+                      href="https://cms-blog-grabcode.netlify.app/blog"
+                      target="_blank"
+                    >
+                      Bloga z własnym CMS
+                    </Link>{" "}
+                    (panelem edycji treści) ukazuje jak samemu dodawać lub
+                    usuwać posty na blogu - wygodna opcja w przypadku dodawania
+                    podobnych postów na blogu (podobna budowa oraz obszerność).
+                    Przetestuj śmiało samemu pod poniższym linkiem (prośba o
+                    kulturalną edycję treści).
+                  </p>
+
+                  <Link
+                    href="https://cms-blog-grabcode.netlify.app/blog"
+                    target="_blank"
+                    className="linkToPage px-2"
+                  >
+                    Odwiedź stronę dla lepszego efektu
+                  </Link>
+                </div>
+                <div className="site-box-vid">
+                  <h3 className="text-center">CMS strony</h3>
+                  <div>
+                    <video controls preload="yes">
+                      <source src="videos/CMSsite.mp4" type="video/mp4" />
+                      Twoja przeglądarka nie obsługuje Video Tagu.
+                    </video>
+                  </div>
+                  <p className="px-4">
+                    Strona z{" "}
+                    <Link
+                      href="https://test-cms-grabcode.vercel.app/"
+                      target="_blank"
+                    >
+                      Panelem edycji treści
+                    </Link>{" "}
+                    ukazuje jak samodzielnie zarządzać treścią na stronie
+                    internetowej. Przetestuj śmiało samemu pod poniższym linkiem
+                    - po kliknięciu &apos;zapisz zmiany&apos; zaczekaj kilka
+                    sekund aby serwer wysłał nowe dane (prośba o kulturalną
+                    edycję treści).
+                  </p>
+
+                  <Link
+                    href="https://test-cms-grabcode.vercel.app/"
+                    target="_blank"
+                    className="linkToPage px-2"
+                  >
+                    Odwiedź stronę dla lepszego efektu
+                  </Link>
+                </div>
+              </div>
+            </div>
           </RevealingSections>
         </div>
       </div>

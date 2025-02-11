@@ -31,7 +31,7 @@ function Hero() {
             <Link href="#kontakt" className="btn1 btn-box">
               Bezpłatna konsultacja
             </Link>
-            <Link href="#uslugi" className="btn btn-box">
+            <Link href="/cennik" className="btn btn-box">
               Sprawdź ofertę
             </Link>
           </div>

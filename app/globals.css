@@ -683,7 +683,8 @@ section h2 {
   gap: 3.2rem;
 }
 
-.site-box {
+.site-box,
+.site-box-vid {
   display: grid;
   gap: 1.2rem;
   box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.05);
@@ -804,10 +805,13 @@ section h2 {
   .site-box {
     width: min-content;
   }
+  .site-box-vid {
+    max-width: 50rem;
+  }
 
   .site-img-box {
-    width: 450px;
-    height: 285px;
+    width: 50rem;
+    height: 28rem;
   }
 }
 
@@ -862,8 +866,8 @@ section h2 {
     padding-right: 1.8rem;
   }
   .site-img-box {
-    width: 320px;
-    height: 180px;
+    width: 36rem;
+    height: 20rem;
   }
 }
 @media (max-width: 32em) {
@@ -914,7 +918,7 @@ section h2 {
 
 @media (max-width: 24em) {
   .site-img-box {
-    width: 260px;
-    height: 145px;
+    width: 28rem;
+    height: 16rem;
   }
 }

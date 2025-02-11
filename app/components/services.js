@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import RevealingSections from "./revealingSections";
+import Link from "next/link";
 
 function Services() {
   return (
@@ -149,6 +150,11 @@ function Services() {
               </div>
             </RevealingSections>
           </div>
+        </div>
+        <div className="grid  justify-center pt-14">
+          <Link href="/uslugi" className="btn">
+            Przejrzyj przykładowe usługi
+          </Link>
         </div>
       </div>
     </section>
