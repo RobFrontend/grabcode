@@ -212,6 +212,11 @@ function Page() {
             </div>
           </RevealingSections>
         </div>
+        <div className="grid  justify-center pt-20">
+          <Link href="/uslugi" className="btn">
+            Przejrzyj przykładowe usługi
+          </Link>
+        </div>
         <div className="grid justify-center py-2">
           <Biglogotheme />
         </div>
