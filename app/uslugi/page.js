@@ -30,15 +30,11 @@ function Page() {
         <div className="h-max text-center">
           <h1 className="heroh1 mb-2">Przykłady usług</h1>
           <h2 className="heroh2">
-            Dostosuj najlepszy pakiet usług na potrzeby Twojej strony
-            internetowej
+            Zapraszam do przejrzenia kilku przykładowych projektów
           </h2>
         </div>
 
-        <div className="grid justify-center py-2">
-          <Biglogotheme />
-        </div>
-        <div className="pb-32">
+        <div className="py-32">
           <RevealingSections goinUp={true}>
             <div className="container px-8 max-md:px-6">
               <h2 className="text-center pb-12">Strony Landing Page</h2>
@@ -301,6 +297,9 @@ function Page() {
               </div>
             </div>
           </RevealingSections>
+        </div>
+        <div className="grid justify-center py-2">
+          <Biglogotheme />
         </div>
       </div>
 

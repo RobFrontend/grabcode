@@ -30,11 +30,8 @@ function Page() {
             internetowej
           </h2>
         </div>
-        <div className="grid justify-center py-2">
-          <Biglogotheme />
-        </div>
       </div>
-      <div className="pb-12">
+      <div className="pb-12 pt-32">
         <div className="container px-8 max-md:px-6">
           <RevealingSections goinUp={true}>
             <div className="pb-16">
@@ -214,6 +211,9 @@ function Page() {
               </div>
             </div>
           </RevealingSections>
+        </div>
+        <div className="grid justify-center py-2">
+          <Biglogotheme />
         </div>
       </div>
       <Footer />
