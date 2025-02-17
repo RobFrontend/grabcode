@@ -101,9 +101,9 @@ function Page() {
                     Opieka nad stroną - od 150zł/miesiąc
                     <br></br>pierwsze 3 miesiące za darmo
                   </li>
-                  <li>Pomoc w wyborze dostawcy domeny/serwa - za darmo</li>
+                  <li>Pomoc w wyborze dostawcy domeny/serwera - za darmo</li>
                 </ul>
-                <p>Przy wyborze 2+ dodatkowych pakietów dostosujemy zniżkę</p>
+                <p>Przy wyborze 2+ dodatkowych pakietów dostosuję zniżkę</p>
               </div>
               <div className="cennik-box cennik-box-best cennik-box-bg">
                 <div className="best-mark"></div>
@@ -141,9 +141,9 @@ function Page() {
                     Opieka nad stroną - od 150zł/miesiąc
                     <br></br>pierwsze 3 miesiące za darmo
                   </li>
-                  <li>Pomoc w wyborze dostawcy domeny/serwa - za darmo</li>
+                  <li>Pomoc w wyborze dostawcy domeny/serwera - za darmo</li>
                 </ul>
-                <p>Przy wyborze 2+ dodatkowych pakietów dostosujemy zniżkę</p>
+                <p>Przy wyborze 2+ dodatkowych pakietów dostosuję zniżkę</p>
               </div>
               <div className="cennik-box cennik-box-bg">
                 <h4>
@@ -177,9 +177,9 @@ function Page() {
                     Opieka nad stroną - od 150zł/miesiąc
                     <br></br>pierwsze 3 miesiące za darmo
                   </li>
-                  <li>Pomoc w wyborze dostawcy domeny/serwa - za darmo</li>
+                  <li>Pomoc w wyborze dostawcy domeny/serwera - za darmo</li>
                 </ul>
-                <p>Przy wyborze 2+ dodatkowych pakietów dostosujemy zniżkę</p>
+                <p>Przy wyborze 2+ dodatkowych pakietów dostosuję zniżkę</p>
               </div>
               <div className="cennik-box h-min cennik-box-bg">
                 <h4>Niestandardowe pakiety</h4>
@@ -211,7 +211,7 @@ function Page() {
                   <li>Sklep z płatnościami (wkrótce)</li>
                 </ul>
 
-                <p>Przy wyborze 2+ dodatkowych pakietów dostosujemy zniżkę</p>
+                <p>Przy wyborze 2+ dodatkowych pakietów dostosuję zniżkę</p>
               </div>
             </div>
           </RevealingSections>
