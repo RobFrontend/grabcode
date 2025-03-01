@@ -866,8 +866,8 @@ section h2 {
     padding-right: 1.8rem;
   }
   .site-img-box {
-    width: 36rem;
-    height: 20rem;
+    width: 40rem;
+    height: 22.5rem;
   }
 }
 @media (max-width: 32em) {
@@ -917,6 +917,12 @@ section h2 {
 }
 
 @media (max-width: 24em) {
+  .site-img-box {
+    width: 35rem;
+    height: 20rem;
+  }
+}
+@media (max-width: 21em) {
   .site-img-box {
     width: 28rem;
     height: 16rem;
