@@ -25,7 +25,7 @@ function Whyus() {
               <h3>4. Indywidualne podejście: </h3>
               <p>Każdy projekt dostosowany do Twoich potrzeb.</p>
             </div>
-            <Link href="/dlaczegoja" target="_blank" className="btn">
+            <Link href="/dlaczegoja" className="btn">
               Warto sprawdzić
             </Link>
             <svg
