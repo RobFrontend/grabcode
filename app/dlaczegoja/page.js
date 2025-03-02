@@ -45,7 +45,6 @@ function Page() {
               <div className="whyme-section1-box">
                 <h3>Budowanie zaufania i profesjonalnego wizerunku</h3>
                 <p>
-                  <HiCheck />
                   Ponad 80% klientów sprawdza firmę online, zanim zdecyduje się
                   na kontakt. Jeśli Twoja firma nie ma strony internetowej,
                   potencjalni klienci mogą uznać ją za mniej profesjonalną i
