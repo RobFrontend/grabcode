@@ -29,7 +29,7 @@ function MobileNav() {
               <Link href="/uslugi">Usługi</Link>
             </li>
             <li>
-              <Link href="/#dlaczegomy">Dlaczego my</Link>
+              <Link href="/dlaczegoja">Dlaczego ja</Link>
             </li>
             <li>
               <Link href="/cennik">Cennik</Link>

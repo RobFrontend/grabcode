@@ -4,14 +4,14 @@ import Link from "next/link";
 
 function Whyus() {
   return (
-    <section id="dlaczegomy">
+    <section id="dlaczegoja">
       <div className="container">
-        <h2>Dlaczego my</h2>
+        <h2>Dlaczego ja</h2>
         <div className="whyus p-8 max-sm:p-4">
           <div className="grid gap-4 relative">
             <div>
               <h3>1. Nowoczesne technologie:</h3>
-              <p>React, Next.js, Tailwind - budujemy szybko i efektywnie.</p>
+              <p>React, Next.js, Tailwind - buduję szybko i efektywnie.</p>
             </div>
             <div>
               <h3>2. SEO i wydajność: </h3>
