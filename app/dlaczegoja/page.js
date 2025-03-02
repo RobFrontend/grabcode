@@ -115,7 +115,7 @@ function Page() {
                   Darmowa wycena
                 </Link>
               </div>
-              <div>
+              <div className="portfolio-box">
                 <Image src={InvestmentIMG} alt="inwestycja" />
               </div>
             </div>

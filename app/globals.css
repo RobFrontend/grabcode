@@ -821,6 +821,16 @@ section h2 {
   margin: 2.4rem auto;
   align-items: center;
 }
+.whyme-section2-box img {
+  border-radius: 15px;
+  transform: scale(1.0001);
+  transition: transform 2s;
+}
+
+.whyme-section2-box img:hover {
+  transform: scale(1.05);
+}
+
 .whyme-section2-text-box {
   display: flex;
   flex-direction: column;
