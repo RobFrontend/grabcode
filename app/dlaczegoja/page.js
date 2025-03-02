@@ -13,7 +13,7 @@ import { TbBrandSpeedtest } from "react-icons/tb";
 import Bolt from "../components/bolt";
 
 export const metadata = {
-  title: "Przykłady usług",
+  title: "Dlaczego ja",
 };
 
 function Page() {
