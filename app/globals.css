@@ -851,6 +851,14 @@ section h2 {
   height: 100%;
 }
 
+.whyme-section3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding: 2.4rem 0;
+}
+
 /* RESPO */
 
 @media (max-width: 80em) {
@@ -966,6 +974,11 @@ section h2 {
   .whyme-section2-box img {
     max-width: 100%;
     margin: 0 auto;
+  }
+  .whyme-section h2 {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: -0.1rem;
   }
 }
 @media (max-width: 32em) {
