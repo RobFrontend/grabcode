@@ -1,9 +1,11 @@
 import Image from "next/image";
 import KV from "@/public/kv.webp";
-import LPkarkonosze from "@/public/LPkarkonosze.webp";
-import LPcity from "@/public/LPcity.webp";
-import LPportfolio from "@/public/LPportfolio.webp";
-import LPcarousels from "@/public/LPcarousels.webp";
+import LPkarkonosze from "@/public/karkonoszeLP.webp";
+import LPcity from "@/public/cityLP.webp";
+import LPportfolio from "@/public/portfolioLP.webp";
+import LPcarousels from "@/public/carouselLP.webp";
+import WSPortfolio from "@/public/portfolioWS.webp";
+import WSBooks from "@/public/booksWS.webp";
 import Header from "../components/header";
 import Star from "../components/star";
 import Footer from "../components/footer";
@@ -43,9 +45,9 @@ function Page() {
             <div className="container px-8 max-md:px-6">
               <h2 className="text-center pb-12">Strony Landing Page</h2>
               <div className="site-boxes">
-                <div className="site-box">
+                <div className="site-box-vid">
                   <h3 className="text-center">Zwięzłość</h3>
-                  <div className="site-img-box">
+                  <div>
                     <Image src={LPcity} alt="przyklad" />
                   </div>
                   <p className="px-4">
@@ -72,9 +74,9 @@ function Page() {
                     Odwiedź stronę dla lepszego efektu
                   </Link>
                 </div>
-                <div className="site-box">
+                <div className="site-box-vid">
                   <h3 className="text-center">Przestronność</h3>
-                  <div className="site-img-box">
+                  <div>
                     <Image src={LPkarkonosze} alt="przyklad" />
                   </div>
                   <p className="px-4">
@@ -100,9 +102,9 @@ function Page() {
                     Odwiedź stronę dla lepszego efektu
                   </Link>
                 </div>
-                <div className="site-box">
+                <div className="site-box-vid">
                   <h3 className="text-center">Portfolio</h3>
-                  <div className="site-img-box">
+                  <div>
                     <Image src={LPportfolio} alt="przyklad" />
                   </div>
                   <p className="px-4">
@@ -128,9 +130,9 @@ function Page() {
                     Odwiedź stronę dla lepszego efektu
                   </Link>
                 </div>
-                <div className="site-box">
+                <div className="site-box-vid">
                   <h3 className="text-center">Efektowność</h3>
-                  <div className="site-img-box">
+                  <div>
                     <Image src={LPcarousels} alt="przyklad" />
                   </div>
                   <p className="px-4">
@@ -169,10 +171,14 @@ function Page() {
                 <div className="site-box-vid">
                   <h3 className="text-center">Strona z blogiem</h3>
                   <div>
-                    <video controls preload="yes">
+                    {/* <video controls preload="yes">
                       <source src="videos/BlogWebsite.mp4" type="video/mp4" />
                       Twoja przeglądarka nie obsługuje Video Tagu.
-                    </video>
+                    </video> */}
+                    <Image
+                      src={WSBooks}
+                      alt="Strona internetowa z blogiem i cms"
+                    />
                   </div>
                   <p className="px-4">
                     Strona{" "}
@@ -199,10 +205,14 @@ function Page() {
                 <div className="site-box-vid">
                   <h3 className="text-center">Rozbudowane Portfolio</h3>
                   <div>
-                    <video controls preload="yes">
+                    {/* <video controls preload="yes">
                       <source src="videos/Portfolio.mp4" type="video/mp4" />
                       Twoja przeglądarka nie obsługuje Video Tagu.
-                    </video>
+                    </video> */}
+                    <Image
+                      src={WSPortfolio}
+                      alt="rozbudowane portfolio z wieloma podstronami"
+                    />
                   </div>
                   <p className="px-4">
                     Strona{" "}

@@ -120,12 +120,12 @@ section h2 {
 
 @keyframes navigationRev {
   0% {
-    transform: translateX(40rem);
+    /* transform: translateX(40rem); */
     opacity: 0;
   }
 
   80% {
-    transform: translateX(-1rem);
+    /* transform: translateX(-1rem); */
     opacity: 1;
   }
   100% {
@@ -329,11 +329,11 @@ section h2 {
 }
 @keyframes h1rev {
   0% {
-    transform: translateX(-20rem);
+    transform: translateX(-4rem);
     opacity: 0;
   }
   80% {
-    transform: translateX(1rem);
+    transform: translateX(0.5rem);
     opacity: 1;
   }
   100% {
@@ -346,11 +346,11 @@ section h2 {
 }
 @keyframes h2rev {
   0% {
-    transform: translateX(20rem);
+    transform: translateX(4rem);
     opacity: 0;
   }
   80% {
-    transform: translateX(-1rem);
+    transform: translateX(-0.5rem);
     opacity: 1;
   }
   100% {
@@ -693,45 +693,6 @@ section h2 {
   border-top-right-radius: 15px;
 }
 
-.site-img-box {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 320px;
-  margin-bottom: 0.8rem;
-}
-
-.site-img-box img {
-  width: 100%;
-  transition: all 0.5s;
-  z-index: 1;
-  filter: grayscale(0.9);
-}
-.site-img-box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(248, 249, 250, 0.4),
-    rgba(29, 53, 87, 0.4),
-    rgba(255, 196, 0, 0.6)
-  );
-  background-position: center;
-  background-size: cover;
-  z-index: 2;
-  transition: all 0.5s;
-}
-.site-img-box:hover img {
-  animation: siteCheck 12s ease-in-out infinite;
-  filter: grayscale(0);
-}
-.site-img-box:hover::before {
-  background-image: none;
-}
 .site-boxes p {
   font-size: 1.2rem;
   text-align: justify;
@@ -748,7 +709,6 @@ section h2 {
   font-weight: 500;
   text-align: center;
   text-decoration: underline;
-
   transition: opacity 0.3s;
 }
 
@@ -756,7 +716,7 @@ section h2 {
   opacity: 0.7;
 }
 
-@keyframes siteCheck {
+/* @keyframes siteCheck {
   0% {
     transform: translateY(0);
   }
@@ -766,7 +726,7 @@ section h2 {
   100% {
     transform: translateY(0%);
   }
-}
+} */
 
 /* ********** DLACZEGO JA ********************** */
 
@@ -875,9 +835,6 @@ section h2 {
   html {
     font-size: 56.25%;
   }
-  .site-img-box {
-    height: 285px;
-  }
 }
 
 @media (max-width: 69em) {
@@ -908,11 +865,6 @@ section h2 {
   }
   .site-box-vid {
     max-width: 50rem;
-  }
-
-  .site-img-box {
-    width: 50rem;
-    height: 28rem;
   }
 }
 
@@ -977,10 +929,7 @@ section h2 {
     padding-left: 1.8rem;
     padding-right: 1.8rem;
   }
-  .site-img-box {
-    width: 40rem;
-    height: 22.5rem;
-  }
+
   .whyme-section2-box img {
     max-width: 100%;
     margin: 0 auto;
@@ -1034,18 +983,5 @@ section h2 {
   .btn,
   .btn1 {
     font-size: 1.8rem;
-  }
-}
-
-@media (max-width: 24em) {
-  .site-img-box {
-    width: 35rem;
-    height: 20rem;
-  }
-}
-@media (max-width: 21em) {
-  .site-img-box {
-    width: 28rem;
-    height: 16rem;
   }
 }
