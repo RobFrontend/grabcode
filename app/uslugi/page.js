@@ -43,7 +43,7 @@ function Page() {
         <div className="py-32">
           <RevealingSections goinUp={true}>
             <div className="container px-8 max-md:px-6">
-              <h2 className="text-center pb-12">Strony Landing Page</h2>
+              <h2 className="text-center pb-14">Strony Landing Page</h2>
               <div className="site-boxes">
                 <div className="site-box-vid">
                   <h3 className="text-center">Zwięzłość</h3>
@@ -166,7 +166,7 @@ function Page() {
         <div className="pb-32">
           <RevealingSections goinUp={true}>
             <div className="container px-8 max-md:px-6">
-              <h2 className="text-center pb-12">Większe strony internetowe</h2>
+              <h2 className="text-center pb-14">Większe strony internetowe</h2>
               <div className="site-boxes">
                 <div className="site-box-vid">
                   <h3 className="text-center">Strona z blogiem</h3>
@@ -244,7 +244,7 @@ function Page() {
         <div className="pb-12">
           <RevealingSections goinUp={true}>
             <div className="container px-8 max-md:px-6">
-              <h2 className="text-center pb-12">Panele edycji treści</h2>
+              <h2 className="text-center pb-14">Panele edycji treści</h2>
               <div className="site-boxes">
                 <div className="site-box-vid">
                   <h3 className="text-center">Blog z CMS</h3>

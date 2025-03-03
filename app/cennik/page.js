@@ -39,9 +39,9 @@ function Page() {
         <div className="container px-8 max-md:px-6">
           <RevealingSections goinUp={true}>
             <div className="pb-16">
-              <div className="cennik-info-box">
-                <h3>Każdy pakiet zawiera w cenie:</h3>
-                <div className="grid gap-2">
+              <div className="cennik-info-box ">
+                <h3 className="mb-3">Każdy pakiet zawiera w cenie:</h3>
+                <div className="grid gap-3">
                   <h4>
                     -Responsywność (dopasowanie Twojej strony do wszystkich
                     urządzeń - od smartfona do dużych monitorów)
@@ -54,7 +54,7 @@ function Page() {
                   <h4>-Pomoc w wyborze dostawcy domeny/serwera</h4>
                 </div>
               </div>
-              <div className="cennik-info-box grid gap-4">
+              <div className="cennik-info-box grid gap-8">
                 <h4>
                   Poniższe ceny są bardziej przykładem. Każdy projekt wymaga
                   własnej wyceny dlatego zapraszam do kontaktu w celu darmowej

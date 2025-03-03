@@ -589,7 +589,7 @@ section h2 {
 .cennik-info-box {
   box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.075);
   padding: 2.4rem;
-  margin-bottom: 1.8rem;
+  margin-bottom: 3.2rem;
   transition: transform 0.3s;
 }
 
@@ -602,8 +602,7 @@ section h2 {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 4.8rem;
   justify-content: space-between;
-  padding-left: 3.2rem;
-  padding-right: 3.2rem;
+  padding: 3.2rem;
 }
 
 .cennik-box {
@@ -680,7 +679,7 @@ section h2 {
 .site-boxes {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .site-box,
@@ -756,7 +755,7 @@ section h2 {
 
 .whyme-section1-boxes {
   display: grid;
-  gap: 2.4rem;
+  gap: 3.2rem;
   padding: 0 1.8rem;
 }
 .whyme-section1-box {
@@ -886,13 +885,13 @@ section h2 {
   .portfolio-box {
     grid-row: 1;
     max-width: 42rem;
+    justify-self: center;
   }
 
   .cennik-boxes {
     grid-template-columns: 1fr 1fr;
-    gap: 3.2rem;
-    padding-left: 1.5rem;
-    padding-right: 1.8rem;
+    gap: 4.8rem;
+    padding: 1.8rem;
   }
 
   .whyme-section2-box {
@@ -902,7 +901,7 @@ section h2 {
     grid-row: 2;
   }
   .whyme-section2-box img {
-    max-width: 50%;
+    max-width: 100%;
     margin: 0 auto;
   }
 }
