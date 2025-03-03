@@ -28,7 +28,7 @@ function Page() {
       </div>
       <div className="pt-14 pb-4 px-8">
         <div className="h-max text-center">
-          <h1 className="heroh1 mb-2">Oferta cenowa</h1>
+          <h1 className="heroh1 mb-2 opacity-50">Oferta cenowa</h1>
           <h2 className="heroh2">
             Dostosuj najlepszy pakiet usług na potrzeby Twojej strony
             internetowej

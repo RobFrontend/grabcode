@@ -34,7 +34,7 @@ function Page() {
       </div>
       <div className="pt-14 pb-4 px-8">
         <div className="h-max text-center">
-          <h1 className="heroh1 mb-2">Przykłady usług</h1>
+          <h1 className="heroh1 mb-2 opacity-50">Przykłady usług</h1>
           <h2 className="heroh2">
             Zapraszam do przejrzenia kilku przykładowych projektów
           </h2>
