@@ -6,7 +6,7 @@ import Footer from "../components/footer";
 import RevealingSections from "../components/revealingSections";
 import Biglogotheme from "../components/biglogotheme";
 import Link from "next/link";
-import InvestmentIMG from "@/public/inwestycja.webp";
+import InvestmentIMG from "@/public/inwestycja2.webp";
 import ArrowUp from "../components/arrowUp";
 import { HiCheck } from "react-icons/hi2";
 import { TbBrandSpeedtest } from "react-icons/tb";
