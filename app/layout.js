@@ -1,6 +1,7 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./context/ThemeContext";
+import Cookiesy from "./components/Cookiesy";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -87,7 +88,10 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
 
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <Cookiesy />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
