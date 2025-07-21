@@ -13,8 +13,12 @@ Hover efekt: Delikatne rozjaśnienie akcentu np. na #FF8500 (pomarańczowy) lub 
 
 :root {
   --background-color: #f8f9fa;
-  --background-color-opacity: rgba(248, 249, 250, 0.5);
+  --background-color2: #f8f9fa;
+  /* --background-color-opacity: rgba(248, 249, 250, 0.5); */
+  --background-color-opacity: rgba(248, 249, 250, 1);
   --font-color: #1d3557;
+  --font-color2: #0c1523;
+  --input-background: #fff;
 
   --accent-color: #ffc300;
   --cta-orange: #ff6f00;
@@ -25,8 +29,12 @@ Hover efekt: Delikatne rozjaśnienie akcentu np. na #FF8500 (pomarańczowy) lub 
 
 [data-theme="dark"] {
   --background-color: #1d3557;
-  --background-color-opacity: rgba(29, 53, 87, 0.5);
+  --background-color2: #0c1523;
+  /* --background-color-opacity: rgba(29, 53, 87, 0.5); */
+  --background-color-opacity: rgba(29, 53, 87, 1);
   --font-color: #f8f9fa;
+  --input-background: #1d3557;
+  --accent-color: #e6b000;
 }
 
 .thememode {
@@ -55,7 +63,7 @@ html {
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--background-color2);
   color: var(--font-color);
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
@@ -109,7 +117,7 @@ section h2 {
 
 .cookiesy {
   color: var(--font-color);
-  background-color: var(--background-color);
+  background-color: var(--background-color2);
   padding: 3.2rem;
   z-index: 99;
   font-size: 1.8rem;
@@ -125,6 +133,10 @@ section h2 {
   background-color: var(--accent-color);
   border-radius: 0.7rem;
   width: min-content;
+}
+
+.big-logo {
+  background-color: var(--background-color);
 }
 
 /* HEADER ******************************************************* */
@@ -161,6 +173,7 @@ section h2 {
 
 .navigation .pcnav a:hover {
   border-bottom: 0.2rem solid var(--accent-color);
+  opacity: 0.75;
 }
 .nav-active:link {
   border-bottom: 0.2rem solid var(--accent-color);
@@ -389,8 +402,9 @@ section h2 {
 }
 
 .services-box {
-  /* border: 0.4rem solid var(--accent-color); */
-  box-shadow: 0rem 0.5rem 1rem 0.2rem rgba(0, 0, 0, 0.05);
+  display: grid;
+  border: 0.2rem solid var(--background-color2);
+  box-shadow: 0rem 0.5rem 1rem 0.2rem rgba(0, 0, 0, 0.1);
   transition: all 0.5s;
   border-radius: 15px;
   /* background-color: var(--background-color-opacity); */
@@ -400,6 +414,7 @@ section h2 {
   background-attachment: fixed; */
 }
 .services-box:hover {
+  border: 0.2rem solid var(--accent-color);
   /* transform: translateY(-0.6rem); */
   box-shadow: 0rem 1rem 1.5rem 0.2rem rgba(0, 0, 0, 0.05);
 }
@@ -407,8 +422,22 @@ section h2 {
 .service {
   display: grid;
   padding: 2.4rem;
+  flex-direction: column;
   gap: 1.8rem;
   transition: transform 0.5s;
+}
+
+.services-box .last {
+  margin: 0 auto;
+  align-self: end;
+  margin-bottom: 3.2rem;
+}
+.services-box .last .btn {
+  box-shadow: none;
+}
+.services-box .last .btn:hover {
+  opacity: 0.8;
+  box-shadow: 0rem 1rem 1.5rem 0.2rem rgba(0, 0, 0, 0.05);
 }
 
 .service:hover {
@@ -428,8 +457,9 @@ section h2 {
 }
 
 .services-box li {
-  padding: 0 0.4rem;
+  padding: 0.2rem 0.4rem;
   border-bottom: 1px solid var(--background-color-opacity);
+  border-bottom: 1px solid rgba(255, 196, 0, 0.3);
 }
 
 .services-box svg {
@@ -540,7 +570,9 @@ section h2 {
   padding: 0.6rem;
   margin-top: 0.4rem;
   border-radius: 10px;
-  color: #1d3557;
+  /* color: #1d3557; */
+  color: var(--font-color);
+  background-color: var(--input-background);
 }
 .contactform textarea {
   font-size: 1.2rem;
@@ -592,7 +624,8 @@ section h2 {
 /* //// CENNIK ///////////////////////////////////// */
 
 .cennik-box-bg {
-  background-image: linear-gradient(
+  border: 0.2rem solid var(--accent-color);
+  /* background-image: linear-gradient(
     to bottom right,
     rgba(248, 249, 250, 0.2),
     rgba(29, 53, 87, 0.05),
@@ -603,7 +636,7 @@ section h2 {
 
   -webkit-font-smoothing: antialiased;
   transition: all 1s;
-  animation: logoxd 16s infinite;
+  animation: logoxd 16s infinite; */
 }
 
 .cennik-info-box {
@@ -638,7 +671,7 @@ section h2 {
 
 .cennik-box-best {
   position: relative;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to bottom right,
     rgba(248, 249, 250, 0.3),
     rgba(29, 53, 87, 0.15),
@@ -649,7 +682,7 @@ section h2 {
 
   -webkit-font-smoothing: antialiased;
   transition: all 0.5s;
-  animation: logoxd 16s infinite;
+  animation: logoxd 16s infinite; */
 }
 .cennik-box-best h4 {
   z-index: 2;

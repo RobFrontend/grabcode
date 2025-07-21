@@ -19,7 +19,7 @@ export const metadata = {
 function Page() {
   return (
     <>
-      <div className="min-h-[35vh] overflow-hidden relative kv">
+      <div className="min-h-[50vh] overflow-hidden relative kv">
         <Header />
 
         <Image
@@ -31,9 +31,9 @@ function Page() {
           className="-z-10"
         />
       </div>
-      <div className="pt-14 pb-4 px-8">
+      <div className="pt-32 pb-24 px-8">
         <div className="h-max text-center">
-          <h1 className="heroh1 mb-2 opacity-50">Dlaczego ja</h1>
+          <h1 className="heroh1 mb-8 opacity-50">Dlaczego ja</h1>
           <h2 className="heroh2">
             Nowoczesny design, szybkie działanie, więcej klientów
           </h2>
@@ -194,10 +194,9 @@ function Page() {
             </h4>
           </div>
         </RevealingSections>
-
-        <div className="grid justify-center py-2">
-          <Biglogotheme />
-        </div>
+      </div>
+      <div className="grid justify-center py-2 big-logo w-full">
+        <Biglogotheme />
       </div>
 
       <Footer />

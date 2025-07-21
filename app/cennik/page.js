@@ -14,7 +14,7 @@ export const metadata = {
 function Page() {
   return (
     <>
-      <div className="min-h-[35vh] overflow-hidden relative kv">
+      <div className="min-h-[50vh] overflow-hidden relative kv">
         <Header />
 
         <Image
@@ -26,16 +26,16 @@ function Page() {
           className="-z-10"
         />
       </div>
-      <div className="pt-14 pb-4 px-8">
+      <div className="pt-32 px-8">
         <div className="h-max text-center">
-          <h1 className="heroh1 mb-2 opacity-50">Oferta cenowa</h1>
+          <h1 className="heroh1 mb-8 opacity-50">Oferta cenowa</h1>
           <h2 className="heroh2">
             Dostosuj najlepszy pakiet usług na potrzeby Twojej strony
             internetowej
           </h2>
         </div>
       </div>
-      <div className="pb-12 pt-32">
+      <div className="pb-16 pt-24">
         <div className="container px-8 max-md:px-6">
           <RevealingSections goinUp={true}>
             <div className="pb-16">
@@ -218,12 +218,12 @@ function Page() {
         </div>
         <div className="grid  justify-center pt-20">
           <Link href="/uslugi" className="btn">
-            Przejrzyj przykładowe usługi
+            Sprawdź usługi
           </Link>
         </div>
-        <div className="grid justify-center py-2">
-          <Biglogotheme />
-        </div>
+      </div>
+      <div className="grid justify-center py-2 big-logo w-full">
+        <Biglogotheme />
       </div>
       <Footer />
     </>

@@ -8,8 +8,8 @@ function Hero() {
   return (
     <div className="min-h-screen ">
       <Header />
-      <div className="h-screen grid max-w-[50%]   items-center max-[1480px]:max-w-[65%] max-[950px]:max-w-[80%] max-[800px]:max-w-[100%] max-sm:items-start">
-        <div className="px-8 pb-8 borderr max-sm:mt-[96px]">
+      <div className="h-screen grid max-w-[60%]   items-center max-[1580px]:max-w-[70%] max-[950px]:max-w-[80%] max-[800px]:max-w-[100%] max-sm:items-start">
+        <div className="px-[128px] max-2xl:px-[80px] max-xl:px-[48px] pb-8 borderr max-sm:mt-[96px]">
           <div>
             <h1 className="mb-8 heroh1">
               <span>
@@ -19,8 +19,8 @@ function Hero() {
             </h1>
 
             <h2 className="mb-4 heroh2">
-              Profesjonalne strony internetowe,<br></br> które sprzedają i
-              budują wizerunek Twojej marki
+              Skuteczne strony internetowe,<br></br> które sprzedają i budują
+              wizerunek Twojej marki
             </h2>
             <h3 className="heroh2 heroh3">
               Od pomysłu do gotowej strony<br></br>- zadbam o każdy szczegół,
