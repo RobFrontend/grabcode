@@ -33,7 +33,7 @@ function Page() {
         />
       </div>
       <div className="pt-32 pb-16 ">
-        <div className="h-max text-center pb-24 border-b">
+        <div className="h-max text-center pb-24 border-b-2 border-[rgba(255,196,0,0.5)] ">
           <h1 className="heroh1 mb-8 opacity-50">Przykłady usług</h1>
           <h2 className="heroh2">
             Zapraszam do przejrzenia kilku przykładowych projektów
