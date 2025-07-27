@@ -757,7 +757,7 @@ section h2 {
 
 .linkToPage:link,
 .linkToPage:active {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 500;
   text-align: center;
   text-decoration: underline;
@@ -768,17 +768,39 @@ section h2 {
   opacity: 0.7;
 }
 
-/* @keyframes siteCheck {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-95%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-} */
+.services-boxes-device {
+  display: grid;
+  gap: 9.6rem;
+}
+.services-box-device {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4.8rem;
+  max-height: 90rem;
+  justify-items: center;
+}
+
+.services-pages-h2 {
+  padding-bottom: 9.6rem;
+  text-align: center;
+}
+
+.services-box-device h3 {
+  font-size: 3.2rem;
+}
+.services-box-device p {
+  font-size: 1.8rem;
+  text-align: justify;
+}
+.services-box-device ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 1.6rem;
+}
+.services-box-device a {
+  font-size: 1.8rem;
+}
 
 /* ********** DLACZEGO JA ********************** */
 
@@ -888,6 +910,12 @@ section h2 {
     font-size: 56.25%;
   }
 }
+@media (max-width: 75em) {
+  .services-box-device {
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+  }
+}
 
 @media (max-width: 69em) {
   .grid_3-cols {
@@ -959,6 +987,17 @@ section h2 {
   }
 }
 
+@media (max-width: 48em) {
+  .services-box-device {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+  .services-box-device img {
+    max-width: 50rem;
+    padding: 0 1.8rem;
+  }
+}
+
 @media (max-width: 36em) {
   .grid_3-cols {
     display: grid;
@@ -990,6 +1029,9 @@ section h2 {
     text-align: center;
     font-size: 3rem;
     letter-spacing: -0.1rem;
+  }
+  .services-box-device img {
+    max-width: 75%;
   }
 }
 @media (max-width: 32em) {
