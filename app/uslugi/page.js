@@ -334,7 +334,7 @@ function Page() {
                         target="_blank"
                         className="linkToPage"
                       >
-                        Obejrzyj Portfolio
+                        Sprawdź Design
                       </Link>
                     </div>
                   </div>
