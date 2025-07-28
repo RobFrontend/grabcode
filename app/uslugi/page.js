@@ -318,6 +318,7 @@ function Page() {
                         -pięc różnych wyglądów strony zachowując strukturę
                         Landing Page
                       </li>
+
                       <li>
                         -zmiana zawartości strony przez kliknięcie na kafelki
                         widoczne w prawym dolnym rogu

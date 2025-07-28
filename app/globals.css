@@ -40,13 +40,23 @@ Hover efekt: Delikatne rozjaśnienie akcentu np. na #FF8500 (pomarańczowy) lub 
 .thememode {
   transition: all 0.3s;
   font-size: 1rem;
-  padding: 0.6rem;
+  /* padding: 0.6rem; */
   border-radius: 150px;
-  background-color: var(--font-color);
+  /* background-color: var(--font-color); */
 }
 .thememode:hover {
   /* background-color: var(--background-color); */
   opacity: 0.6;
+}
+
+.themeicon {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: var(--font-color2);
+}
+
+.themeicon-sun {
+  fill: white;
 }
 
 *,
@@ -995,6 +1005,12 @@ section h2 {
   .services-box-device img {
     max-width: 50rem;
     padding: 0 1.8rem;
+  }
+  .themeicon {
+    width: 3.2rem;
+    height: 3.2rem;
+    fill: var(--font-color2);
+    margin-bottom: 0.2rem;
   }
 }
 
