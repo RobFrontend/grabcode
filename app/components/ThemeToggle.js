@@ -17,7 +17,3 @@ export default function ThemeToggle() {
     </button>
   );
 }
-
-function Night() {
-  return <Image src={sun} alt="sun" />;
-}
