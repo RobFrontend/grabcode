@@ -784,7 +784,7 @@ section h2 {
 }
 .services-box-device {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 4.8rem;
   max-height: 90rem;
   justify-items: center;
