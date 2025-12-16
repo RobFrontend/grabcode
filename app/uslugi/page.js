@@ -276,7 +276,7 @@ function Page() {
                       <li>
                         -Hero (pierwszoplanowy obrazek oraz tytuł i informacje)
                       </li>
-                      <li>-odnoścniki do social mediów</li>
+                      <li>-odnośniki do social mediów</li>
                       <li>
                         -przedstawiającą przykładową historię działalności
                         autora
