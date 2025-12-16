@@ -315,7 +315,7 @@ function Page() {
                     </p>
                     <ul className="text-xl p-2">
                       <li>
-                        -pięc różnych wyglądów strony zachowując strukturę
+                        -pięć różnych wyglądów strony zachowując strukturę
                         Landing Page
                       </li>
 
