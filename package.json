@@ -14,7 +14,7 @@
     "dashjs": "^5.0.3",
     "formidable": "^2.0.0",
     "multiparty": "^4.2.3",
-    "next": "15.1.5",
+    "next": "15.1.11",
     "next-video": "^2.0.4",
     "nodemailer": "^6.10.0",
     "react": "^19.0.0",
