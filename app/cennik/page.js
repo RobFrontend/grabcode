@@ -46,8 +46,8 @@ function Page() {
                 </h2>
                 <h3>Idealny na start, kampanie reklamowe i proste oferty</h3>
                 <h4>
-                  Prosta, szybka strona, która skupia się na jednym celu -
-                  sprzedaży lub pozyskaniu kontaktu.
+                  Strona zaprojektowana pod jeden cel - sprzedaż lub
+                  pozyskiwanie klientów.
                 </h4>
                 <p className="cennik-box-p">Co otrzymujesz:</p>
                 <ul className="ul-lg">
@@ -147,8 +147,8 @@ function Page() {
                   Dla firm, które chcą skalować biznes i automatyzować procesy
                 </h3>
                 <h4>
-                  Profesjonalna strona z większą ilością funkcjonalności i
-                  możliwością dalszego rozwoju.
+                  Strona, która wspiera rozwój Twojego biznesu i automatyzuje
+                  część procesów (np. kontakt, pozyskiwanie leadów).
                 </h4>
                 <p className="cennik-box-p">Co otrzymujesz:</p>
                 <ul className="grid ul-lg">
@@ -249,6 +249,18 @@ function Page() {
                   <h4>*wsparcie w rozwoju strony</h4>
                 </div>
                 <h3 className="pt-6">Pierwsze 3 miesiące gratis</h3>
+              </div>
+              <div className="cennik-info-box ">
+                <h2 className="mb-3">Dla kogo jest ta oferta?</h2>
+                <div className="grid gap-4 pt-6">
+                  <h4>*dla firm, które chcą zdobywać klientów z internetu</h4>
+                  <h4>
+                    *dla lokalnych biznesów, które chcą wyglądać profesjonalnie
+                  </h4>
+                  <h4>
+                    *dla osób, które potrzebują strony, którą łatwo rozbudować
+                  </h4>
+                </div>
               </div>
               <div className="cennik-info-box ">
                 <h2 className="mb-3">Dlaczego warto ze mną pracować?</h2>
