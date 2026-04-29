@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
-    "@fortawesome/react-fontawesome": "^0.2.2",
-    "dashjs": "^5.0.3",
+    "@fortawesome/react-fontawesome": "^3.3.1",
+    "dashjs": "^5.1.1",
     "formidable": "^2.0.0",
     "multiparty": "^4.2.3",
     "next": "^16.0.10",
