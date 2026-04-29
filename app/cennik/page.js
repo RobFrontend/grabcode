@@ -38,54 +38,33 @@ function Page() {
       <div className="pb-16 pt-24">
         <div className="container px-8 max-md:px-6">
           <RevealingSections goinUp={true}>
-            <div className="pb-16">
-              <div className="cennik-info-box ">
-                <h3 className="mb-3">Każdy pakiet zawiera w cenie:</h3>
-                <div className="grid gap-3">
-                  <h4>
-                    -Responsywność (dopasowanie Twojej strony do wszystkich
-                    urządzeń - od smartfona do dużych monitorów)
-                  </h4>
-                  <h4>
-                    -Podstawowe animacje potrzebne do estetyki designu Twojej
-                    strony
-                  </h4>
-                  <h4>-Pomysł na design Twojej strony internetowej</h4>
-                  <h4>-Pomoc w wyborze dostawcy domeny/serwera</h4>
-                </div>
-              </div>
-              <div className="cennik-info-box grid gap-8">
-                <h4>
-                  Poniższe ceny są bardziej przykładem. Każdy projekt wymaga
-                  własnej wyceny dlatego zapraszam do kontaktu w celu darmowej
-                  wyceny Twojej strony internetowej
-                </h4>
-                <Link className="btn2 w-fit justify-self-end" href="/#kontakt">
-                  Darmowa wycena
-                </Link>
-              </div>
-            </div>
-          </RevealingSections>
-          <RevealingSections goinUp={true}>
             <div className="cennik-boxes">
               <div className="cennik-box cennik-box-bg">
-                <h4>
+                <h2>
                   Landing Page<br></br>
-                  <span>(1 strona)</span>
+                  <span className="text-lg">(1 strona)</span>
+                </h2>
+                <h3>Idealny na start, kampanie reklamowe i proste oferty</h3>
+                <h4>
+                  Prosta, szybka strona, która skupia się na jednym celu -
+                  sprzedaży lub pozyskaniu kontaktu.
                 </h4>
-                <p>
-                  Prosta strona z podstawowymi informacjami, CTA i np.
-                  formularzem kontaktowym.
-                </p>
+                <p className="cennik-box-p">Co otrzymujesz:</p>
                 <ul className="ul-lg">
-                  <li>HTML + CSS + JavaScript - od 900zł</li>
-                  <div className="flex gap-2">
+                  {/* <li>HTML + CSS + JavaScript - od 900zł</li> */}
+                  <li>*nowoczesny design dopasowany do Twojej branży</li>
+                  <li>*szybkie ładowanie (SEO-friendly)</li>
+                  <li>*pełna responsywność (telefon / tablet / desktop)</li>
+                  <li>*formularz kontaktowy</li>
+                  <li>*podstawowe animacje i interakcje</li>
+                  <li>*pomoc przy wdrożeniu (domena / hosting)</li>
+                  {/* <div className="flex gap-2">
                     <li>React + Tailwind - od 1300zł</li>
                     <Star />
                   </div>
-                  <li>Next.js + Tailwind - od 1600zł</li>
+                  <li>Next.js + Tailwind - od 1600zł</li> */}
                 </ul>
-                <ul className="ul-sm">
+                {/* <ul className="ul-sm">
                   <li>Dodatkowo:</li>
                   <li>Optymalizacja SEO - od 100zł</li>
                   <li>Specjalne dodatkowe animacje - od 200zł</li>
@@ -103,27 +82,39 @@ function Page() {
                   </li>
                   <li>Pomoc w wyborze dostawcy domeny/serwera - za darmo</li>
                 </ul>
-                <p>Przy wyborze 2+ dodatkowych pakietów dostosuję zniżkę</p>
+                <p>Przy wyborze 2+ dodatkowych pakietów dostosuję zniżkę</p> */}
+                <p className="cennik-price">Od 1500zł</p>
               </div>
               <div className="cennik-box cennik-box-best cennik-box-bg">
                 <div className="best-mark"></div>
-                <h4>
+                <h2>
                   Strona dla mniejszych firm<br></br>
                   <span>(do 5 podstron)</span>
+                </h2>
+                <h3>
+                  Dla firm, które chcą wyglądać profesjonalnie i budować
+                  zaufanie
+                </h3>
+                <h4>
+                  Strona wizytówka z najważniejszymi informacjami o Twojej
+                  firmie.
                 </h4>
-                <p>
-                  Strona wizytówka z informacjami o firmie, ofertą, galerią,
-                  kontaktem itd.
-                </p>
+                <p className="cennik-box-p">Co otrzymujesz:</p>
                 <ul className="grid ul-lg">
-                  <li>HTML + CSS + JavaScript - od 1800zł</li>
-                  <div className="flex gap-2">
+                  {/* <li>HTML + CSS + JavaScript - od 1800zł</li> */}
+                  <li>*do 5 podstron (np. oferta, o nas, kontakt)</li>
+                  <li>*spójny, nowoczesny design</li>
+                  <li>*optymalizacja pod SEO</li>
+                  <li>*formularz kontaktowy</li>
+                  <li>*możliwość rozbudowy w przyszłości</li>
+                  <li>*podstawowe animacje i UX</li>
+                  {/* <div className="flex gap-2">
                     <li>React + Tailwind - od 2300zł</li>
                     <Star />
                   </div>
-                  <li>Next.js + Tailwind - od 2800zł</li>
+                  <li>Next.js + Tailwind - od 2800zł</li> */}
                 </ul>
-                <ul className="grid ul-sm">
+                {/* <ul className="grid ul-sm">
                   <li>Dodatkowo:</li>
                   <li>Optymalizacja SEO - od 300zł</li>
                   <li>Specjalne dodatkowe animacje - od 300zł</li>
@@ -142,24 +133,41 @@ function Page() {
                     <br></br>pierwsze 3 miesiące za darmo
                   </li>
                   <li>Pomoc w wyborze dostawcy domeny/serwera - za darmo</li>
-                </ul>
-                <p>Przy wyborze 2+ dodatkowych pakietów dostosuję zniżkę</p>
+                </ul> */}
+                {/* <p>Przy wyborze 2+ dodatkowych pakietów dostosuję zniżkę</p> */}
+                <p className="cennik-price">Od 2800zł</p>
               </div>
               <div className="cennik-box cennik-box-bg">
-                <h4>
+                <h2>
                   Strona dla firm<br></br>
-                  <span>(do 10 podstron)</span>
+                  {/* <span>(do 10 podstron)</span> */}
+                  <span>(Więcej niż 5 podstron)</span>
+                </h2>
+                <h3>
+                  Dla firm, które chcą skalować biznes i automatyzować procesy
+                </h3>
+                <h4>
+                  Profesjonalna strona z większą ilością funkcjonalności i
+                  możliwością dalszego rozwoju.
                 </h4>
-                <p>Profesjonalna strona z bardziej rozbudowaną strukturą</p>
+                <p className="cennik-box-p">Co otrzymujesz:</p>
                 <ul className="grid ul-lg">
-                  <li>HTML + CSS + JavaScript - od 3300zł</li>
-                  <div className="flex gap-2">
+                  {/* <li>HTML + CSS + JavaScript - od 3300zł</li> */}
+                  <li>*rozbudowaną strukturę strony</li>
+                  <li>*indywidualny design pod markę</li>
+                  <li>*optymalizację wydajności i SEO</li>
+                  <li>
+                    *przygotowanie pod marketing (Google Ads, SEO, social media)
+                  </li>
+                  <li>*możliwość integracji z systemami (API, CRM itd.)</li>
+                  <li>*zaawansowane animacje i UX</li>
+                  {/* <div className="flex gap-2">
                     <li>React + Tailwind - od 3900zł</li>
                     <Star />
                   </div>
-                  <li>Next.js + Tailwind - od 4500zł</li>
+                  <li>Next.js + Tailwind - od 4500zł</li> */}
                 </ul>
-                <ul className="grid ul-sm">
+                {/* <ul className="grid ul-sm">
                   <li>Dodatkowo:</li>
                   <li>Optymalizacja SEO - od 400zł</li>
                   <li>Specjalne dodatkowe animacje - od 500zł</li>
@@ -179,39 +187,85 @@ function Page() {
                   </li>
                   <li>Pomoc w wyborze dostawcy domeny/serwera - za darmo</li>
                 </ul>
-                <p>Przy wyborze 2+ dodatkowych pakietów dostosuję zniżkę</p>
+                <p>Przy wyborze 2+ dodatkowych pakietów dostosuję zniżkę</p> */}
+                <p className="cennik-price">Od 4500zł</p>
               </div>
               <div className="cennik-box h-min cennik-box-bg">
-                <h4>Niestandardowe pakiety</h4>
-                <p>
+                <h2>
+                  Rozszerzenia<br></br>
+                  <span>(dopasuj stronę do swoich potrzeb)</span>
+                </h2>
+                <p className="cennik-box-p">
                   Możemy dobrać inne niestandardowe pakiety do każdej oferty,
                   oto kilka z nich:
                 </p>
                 <ul className="ul-lg">
-                  <li>Edycja/prowadzenie istniejącej strony</li>
-                  <li>Większa ilość podstron</li>
+                  {/* <li>Samodzielna edycja/prowadzenie istniejącej strony</li> */}
                   <li>
-                    Filtrowanie, sortowanie, checkboxy <br></br>(np. sortowanie
-                    postów bloga)
+                    *CMS (panel do edycji treści)<br></br>
+                    <span>
+                      Samodzielnie dodawaj i edytuj treści (np. blog, oferta)
+                    </span>
                   </li>
-                  <li>Formularz kontaktowy</li>
-                  <li>Integracja z API/bazą danych</li>
+                  {/* <li>Większa ilość podstron</li> */}
                   <li>
+                    *Wielojęzyczność<br></br>
+                    <span>Strona dostępna w wielu językach</span>
+                  </li>
+                  <li>
+                    *Copywriting<br></br>
+                    <span>Tworzenie treści dopasowanych do Twojej branży</span>
+                  </li>
+                  <li>
+                    *Grafiki / wideo (AI + obróbka)<br></br>
+                    <span>Unikalne materiały wizualne pod Twoją markę</span>
+                  </li>
+                  {/* <li>
                     Interaktywne komponenty <br></br>
                     (Wykresy, porównania, mini gry, karuzele)
-                  </li>
+                  </li> */}
                   <li>
-                    Kreacja treści dostosowana do tematyki strony (po mojej
-                    stronie)
+                    *Integracje (API / systemy zewnętrzne)<br></br>
+                    <span>Połączenie z narzędziami, bazami danych</span>
                   </li>
-                  <li>Wybór kolorystyki (po mojej stronie)</li>
-                  <li>Autoryzacja</li>
-                  <li>Posiadanie właśnych użytkowników</li>
-                  <li>Płatności (wkrótce)</li>
-                  <li>Sklep z płatnościami (wkrótce)</li>
+                  {/* <li>Autoryzacja</li>
+                  <li>Posiadanie właśnych użytkowników</li> */}
+                  {/* <li>Płatności (wkrótce)</li>
+                  <li>Sklep z płatnościami (wkrótce)</li> */}
                 </ul>
 
-                <p>Przy wyborze 2+ dodatkowych pakietów dostosuję zniżkę</p>
+                {/* <p>Przy wyborze 2+ dodatkowych pakietów dostosuję zniżkę</p> */}
+              </div>
+            </div>
+          </RevealingSections>
+          <RevealingSections goinUp={true}>
+            <div className="pt-16">
+              <div className="cennik-info-box ">
+                <h2 className="mb-3">Opieka i wsparcie</h2>
+                <h3 className="pt-6">Nie zostajesz sam po wdrożeniu.</h3>
+                <div className="grid gap-4 pt-6">
+                  <h4>*opieka techniczna</h4>
+                  <h4>*poprawki i aktualizacje</h4>
+                  <h4>*wsparcie w rozwoju strony</h4>
+                </div>
+                <h3 className="pt-6">Pierwsze 3 miesiące gratis</h3>
+              </div>
+              <div className="cennik-info-box ">
+                <h2 className="mb-3">Dlaczego warto ze mną pracować?</h2>
+                <div className="grid gap-4 pt-6">
+                  <h4>
+                    *tworzę strony, które realnie pomagają zdobywać klientów
+                  </h4>
+                  <h4>*łączę design + technologię + marketing</h4>
+                  <h4>*doradzam, nie tylko „koduję”</h4>
+                  <h4>*myślę o Twoim biznesie, nie tylko o wyglądzie strony</h4>
+                </div>
+              </div>
+              <div className="cennik-info-box grid gap-8">
+                <h2>Napisz do mnie i wyceń swój projekt</h2>
+                <Link className="btn2 w-fit justify-self-end" href="/#kontakt">
+                  Darmowa wycena
+                </Link>
               </div>
             </div>
           </RevealingSections>

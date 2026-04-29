@@ -424,7 +424,7 @@ function Page() {
                     <p className="">
                       Strona{" "}
                       <Link
-                        href="https://www.jeszczestronaalbosto.pl/"
+                        href="https://jeszcze-strona-next.vercel.app/"
                         target="_blank"
                         className="underline"
                       >
@@ -444,7 +444,7 @@ function Page() {
                     </p>
                     <div className="grid items-center">
                       <Link
-                        href="https://www.jeszczestronaalbosto.pl/"
+                        href="https://jeszcze-strona-next.vercel.app/"
                         target="_blank"
                         className="linkToPage"
                       >

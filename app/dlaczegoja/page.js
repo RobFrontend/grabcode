@@ -176,7 +176,7 @@ function Page() {
                 <p>-lekki i nowoczesny styl dopasowany do Twojej marki</p>
               </div>
               <div>
-                <h3>Supabase / MongoDB</h3>
+                <h3>Supabase / MongoDB / Sanity</h3>
                 <p>-bezpieczne i wydajne przechowywanie danych</p>
               </div>
               <div>
