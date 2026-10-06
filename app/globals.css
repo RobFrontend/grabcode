@@ -1,8 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@custom-variant dark (&:is(.dark *));
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
 /* @theme inline {
   --color-font: var(--font-color);
@@ -54,11 +52,18 @@ Hover efekt: Delikatne rozjaśnienie akcentu np. na #FF8500 (pomarańczowy) lub 
   font-size: 1rem;
   /* padding: 0.6rem; */
   border-radius: 150px;
+  cursor: pointer;
   /* background-color: var(--font-color); */
 }
 .thememode:hover {
   /* background-color: var(--background-color); */
   opacity: 0.6;
+}
+
+form select,
+form button,
+button {
+  cursor: pointer;
 }
 
 .themeicon {
@@ -74,8 +79,8 @@ Hover efekt: Delikatne rozjaśnienie akcentu np. na #FF8500 (pomarańczowy) lub 
 *,
 *::after,
 *::before {
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+  margin: 0; */
   box-sizing: border-box;
 }
 
@@ -262,8 +267,8 @@ footer ul li {
   }
 }
 
-.navmb a:hover {
-  border-bottom: 0.2rem solid rgba(255, 255, 255, 0.0001);
+.navmb a {
+  border-bottom: 0.2rem solid rgba(255, 255, 255, 0);
   transition: all 0.5s;
 }
 .navmb a:hover {

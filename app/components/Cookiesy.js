@@ -37,7 +37,7 @@ function Cookiesy() {
   if (consentSaved && !settingsOpen) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-[9999]">
+    <div className="fixed bottom-0 left-0 right-0 z-9999">
       <div className="container py-6 cookiesy rounded-t-2xl box-shadow">
         <div className="flex flex-col gap-6">
           <div>
@@ -83,6 +83,7 @@ function Cookiesy() {
                 checked={analytics}
                 onChange={(e) => setAnalytics(e.target.checked)}
                 aria-label="Analityczne pliki cookies"
+                className="cursor-pointer"
               />
             </label>
 
@@ -101,6 +102,7 @@ function Cookiesy() {
                 checked={marketing}
                 onChange={(e) => setMarketing(e.target.checked)}
                 aria-label="Marketingowe pliki cookies"
+                className="cursor-pointer"
               />
             </label>
           </div>

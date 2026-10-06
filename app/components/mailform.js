@@ -390,7 +390,7 @@ export default function ContactForm() {
           id="consent"
           name="consent"
           required
-          className="mt-1 accent-[#e6b000]"
+          className="mt-1 accent-[#e6b000] cursor-pointer"
         />
 
         <label htmlFor="consent" className="text-sm leading-relaxed">
