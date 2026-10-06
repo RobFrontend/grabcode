@@ -1138,6 +1138,9 @@ footer ul li {
 }
 
 @media (max-width: 36em) {
+  .navigation {
+    padding: 0 1.8rem;
+  }
   .grid_3-cols {
     display: grid;
     grid-template-columns: 1fr;
