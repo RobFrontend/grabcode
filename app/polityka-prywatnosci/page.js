@@ -33,7 +33,7 @@ function page() {
             </li>
             <li>
               Operatorem serwisu oraz Administratorem danych osobowych jest:
-              Robert Grabowski Osiedle 1/4, 05-180, Nowy Modlin (NIP wkrótce)
+              Robert Grabowski Osiedle 1/4, 05-180, Nowy Modlin, NIP: 5311733463
             </li>
 
             <li>
@@ -68,6 +68,14 @@ function page() {
           <h2 className="mt-16">
             2. Wybrane metody ochrony danych stosowane przez Operatora
           </h2>
+          <ol className="text-xl">
+            <li>
+              1. Istotnym elementem ochrony danych jest regularna aktualizacja
+              wszelkiego oprogramowania, wykorzystywanego przez Operatora do
+              przetwarzania danych osobowych, co w szczególności oznacza
+              regularne aktualizacje komponentów programistycznych.
+            </li>
+          </ol>
           <ol className="text-xl"></ol>
           <h2 className="mt-16">3. Hosting</h2>
           <ol className="text-xl">
