@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: https://www.grabcode.pl/
+Sitemap: https://grabcode.pl/sitemap.xml
