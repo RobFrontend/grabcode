@@ -18,18 +18,24 @@ export function CookieProvider({ children }) {
   const updateGoogleConsent = ({ analytics, marketing }) => {
     if (typeof window === "undefined") return;
 
-    window.dataLayer = window.dataLayer || [];
+    if (typeof window.gtag !== "function") {
+      console.warn("Google Consent: window.gtag nie jest dostępny");
+      return;
+    }
 
-    window.dataLayer.push([
-      "consent",
-      "update",
-      {
-        analytics_storage: analytics ? "granted" : "denied",
-        ad_storage: marketing ? "granted" : "denied",
-        ad_user_data: marketing ? "granted" : "denied",
-        ad_personalization: marketing ? "granted" : "denied",
-      },
-    ]);
+    window.gtag("consent", "update", {
+      analytics_storage: analytics ? "granted" : "denied",
+      ad_storage: marketing ? "granted" : "denied",
+      ad_user_data: marketing ? "granted" : "denied",
+      ad_personalization: marketing ? "granted" : "denied",
+    });
+
+    console.log("Google Consent updated:", {
+      analytics_storage: analytics ? "granted" : "denied",
+      ad_storage: marketing ? "granted" : "denied",
+      ad_user_data: marketing ? "granted" : "denied",
+      ad_personalization: marketing ? "granted" : "denied",
+    });
   };
 
   // Odczyt zapisanej zgody przy wejściu na stronę

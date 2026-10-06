@@ -43,9 +43,9 @@ export default function RootLayout({ children }) {
             __html: `
         window.dataLayer = window.dataLayer || [];
 
-        function gtag(){
-          dataLayer.push(arguments);
-        }
+        window.gtag = function () {
+  window.dataLayer.push(arguments);
+};
 
         gtag('consent', 'default', {
           analytics_storage: 'denied',
