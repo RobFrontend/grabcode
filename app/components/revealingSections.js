@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-function RevealingSections({ children, goinUp }) {
+function RevealingSections({ children, goinUp = false, delay = 0 }) {
   const upReveal = goinUp ? "revealing" : "revealingopa";
   const aboutEl = useRef(null);
   const [isShow, setIsShow] = useState(false);
@@ -13,7 +13,9 @@ function RevealingSections({ children, goinUp }) {
       const handleIntersection = (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setIsShow(true);
+            setInterval(() => {
+              setIsShow(true);
+            }, delay);
           }
         });
       };
@@ -29,7 +31,7 @@ function RevealingSections({ children, goinUp }) {
         observer.unobserve(about);
       };
     }
-  }, [isShow]);
+  }, [isShow, delay]);
   return (
     <div
       ref={aboutEl}

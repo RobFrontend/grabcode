@@ -10,24 +10,35 @@ function Whyus() {
         <div className="whyus p-8 max-sm:p-4">
           <div className="grid gap-4 relative">
             <div>
-              <h3>1. Nowoczesne technologie:</h3>
-              <p>React, Next.js, Tailwind - buduję szybko i efektywnie.</p>
+              <h3>1. Strategia przed grafiką:</h3>
+              <p>
+                Najpierw ustalamy cel strony, dopiero później projektujemy
+                layout.
+              </p>
             </div>
             <div>
-              <h3>2. SEO i wydajność: </h3>
-              <p>Twoja strona będzie szybka i widoczna w Google.</p>
+              <h3>2. Design nastawiony na konwersję:</h3>
+              <p>
+                Estetyka ma nie tylko wyglądać dobrze, ale prowadzić użytkownika
+                do działania.
+              </p>
             </div>
             <div>
-              <h3>3. Responsywność: </h3>
-              <p>Perfekcyjny wygląd na każdym urządzeniu.</p>
+              <h3>3. Szybkość i SEO:</h3>
+              <p>
+                Dobrze zoptymalizowana strona lepiej działa i łatwiej zdobywa
+                widoczność.
+              </p>
             </div>
             <div>
-              <h3>4. Indywidualne podejście: </h3>
-              <p>Każdy projekt dostosowany do Twoich potrzeb.</p>
+              <h3>4. Bezpośrednia współpraca:</h3>
+              <p>
+                Masz kontakt bezpośrednio ze mną- bez chaosu i bez pośredników.
+              </p>
             </div>
-            <Link href="/dlaczegoja" className="btn">
+            {/* <Link href="/o-mnie" className="btn">
               Warto sprawdzić
-            </Link>
+            </Link> */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 384 512"

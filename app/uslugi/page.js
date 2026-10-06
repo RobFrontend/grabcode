@@ -1,578 +1,582 @@
 import Image from "next/image";
-import KV from "@/public/kv.webp";
-import LPkarkonosze from "@/public/karkonoszeLPdevices.png";
-import LPcity from "@/public/cityLPdevices.png";
-import LPportfolio from "@/public/portfolioLPdevices.png";
-import LPcarousels from "@/public/carouselLPdevices.png";
-import WSPortfolio from "@/public/portfolioWSdevices.png";
-import WSBooks from "@/public/booksWSdevices.png";
-import Header from "../components/header";
-import Star from "../components/star";
-import Footer from "../components/footer";
+import KV from "@/public/kvnewopacity.png";
+import Beauty from "@/public/beauty-demo-trans.png";
 import RevealingSections from "../components/revealingSections";
 import Biglogotheme from "../components/biglogotheme";
 import Link from "next/link";
+import { FiEdit, FiMonitor } from "react-icons/fi";
+import {
+  LuLayers3,
+  LuMessagesSquare,
+  LuNotebookPen,
+  LuPlug,
+  LuShieldCheck,
+} from "react-icons/lu";
+import { HiOutlineShoppingCart } from "react-icons/hi";
+import { FaReact, FaRegCircleCheck } from "react-icons/fa6";
+import ServicesTable from "../components/servicesTable";
+import { IoMdSearch } from "react-icons/io";
+import BeautyGrid from "@/public/servicesGrid1.png";
+import PersonalGrid from "@/public/servicesGrid2.png";
+import BuildGrid from "@/public/servicesGrid3.png";
+import B2bGrid from "@/public/servicesGrid4.png";
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { IoConstructOutline } from "react-icons/io5";
+import { MdOutlineFileUpload } from "react-icons/md";
+import {
+  SiNextdotjs,
+  SiSanity,
+  SiTailwindcss,
+  SiTypescript,
+  SiWoocommerce,
+  SiWordpress,
+} from "react-icons/si";
+import Faq from "../components/faq";
+import HomeCta from "../components/homeCta";
 
 export const metadata = {
-  title: "Przykłady usług",
+  title: "Usługi",
+  alternates: {
+    canonical: "/uslugi",
+  },
 };
 
 function Page() {
   return (
     <>
-      <div className="min-h-[50vh] overflow-hidden relative kv">
-        <Header />
-
+      <div className="min-h-[50vh] overflow-hidden relative kv grid items-center px-[128px] max-2xl:px-[80px] max-xl:px-[48px] py-32">
         <Image
           src={KV}
           fill
           objectFit="cover"
           objectPosition="center"
           alt="kv"
-          className="-z-10"
+          className="-z-10  blur-[2px]"
         />
+        <div className="pt-16">
+          <p className="hero-p tracking-tight">Usługi</p>
+          <h1 className="heroh1">
+            Dobieram stronę <br></br>do celu <br className="sm:hidden"></br>
+            <span className="drop-shadow-sm heroh1">Twojego biznesu.</span>
+          </h1>
+          <div className="flex gap-8 py-16 max-[550px]:flex-col max-[550px]:text-center">
+            <Link href="/kontakt" className="btn btn-box btn-hero">
+              Umów bezpłatną konsultację
+            </Link>
+            <Link href="/cennik" className="btn1 btn-box btn-hero">
+              Zobacz cennik
+            </Link>
+          </div>
+        </div>
       </div>
-      <div className="pt-32 pb-16 ">
-        <div className="h-max text-center pb-24 border-b-2 border-[rgba(255,196,0,0.5)] ">
-          <h1 className="heroh1 mb-8 opacity-50">Przykłady usług</h1>
-          <h2 className="heroh2">
-            Zapraszam do przejrzenia kilku przykładowych projektów
-          </h2>
-        </div>
-
-        <div className="pb-32 pt-32 px-8">
-          <RevealingSections goinUp={true}>
-            <div className="container px-8 max-md:px-6">
-              <h2 className="services-pages-h2">Strony Landing Page</h2>
-              {/* <div className="site-boxes">
-                <div className="site-box-vid">
-                  <h3 className="text-center">Zwięzłość</h3>
-                  <div>
-                    <Image src={LPcity} alt="przyklad" />
-                  </div>
-                  <p className="px-4">
-                    Strona{" "}
-                    <Link
-                      href="https://city-robfrontend.netlify.app/"
-                      target="_blank"
-                    >
-                      Miasta LA
-                    </Link>{" "}
-                    zawiera nawigację, Hero (tutaj jest to główny duży obrazek z
-                    tytułem i odnośnikiem w obrazku), odnośniki do social
-                    mediów, szablon informacyjny z CTA (&apos;Call To
-                    Action&apos; - zachęcający użytkownika do kliknięcia w
-                    link), krótką galerię, mapę google oraz stopkę. Odwiedź
-                    stronę aby doświadczyć pełni efektów.
-                  </p>
-
-                  <Link
-                    href="https://city-robfrontend.netlify.app/"
-                    target="_blank"
-                    className="linkToPage px-2"
-                  >
-                    Odwiedź stronę dla lepszego efektu
-                  </Link>
-                </div>
-                <div className="site-box-vid">
-                  <h3 className="text-center">Przestronność</h3>
-                  <div>
-                    <Image src={LPkarkonosze} alt="przyklad" />
-                  </div>
-                  <p className="px-4">
-                    Strona{" "}
-                    <Link
-                      href="https://karkonosze-robfrontend.netlify.app/"
-                      target="_blank"
-                    >
-                      Gór karkonoskich
-                    </Link>{" "}
-                    zawiera nawigację, Hero (brązowe tło z tytułem, podtytułem,
-                    przyckiskami oraz obrazkiem głównym ), szablon z artykułami,
-                    dwie małe galerie, szablon informayjny, szablon z
-                    formularzem kontaktowym oraz stopkę. Odwiedź stronę aby
-                    doświadczyć pełni efektów.
-                  </p>
-
-                  <Link
-                    href="https://karkonosze-robfrontend.netlify.app/"
-                    target="_blank"
-                    className="linkToPage px-2"
-                  >
-                    Odwiedź stronę dla lepszego efektu
-                  </Link>
-                </div>
-                <div className="site-box-vid">
-                  <h3 className="text-center">Portfolio</h3>
-                  <div>
-                    <Image src={LPportfolio} alt="przyklad" />
-                  </div>
-                  <p className="px-4">
-                    Strona{" "}
-                    <Link
-                      href="https://portfolio-robfrontend.netlify.app/"
-                      target="_blank"
-                    >
-                      Portfolio
-                    </Link>{" "}
-                    zawiera nawigację, Hero (pierwszoplanowy obrazek oraz tytuł
-                    i informacje), odnoścniki do social mediów, sekcję
-                    przedstawiającą przykładową historię działalności autora,
-                    dwie karuzele dla sekcji projektów oraz kontakt jako stopkę.
-                    Odwiedź stronę aby doświadczyć pełni efektów.
-                  </p>
-
-                  <Link
-                    href="https://portfolio-robfrontend.netlify.app/"
-                    target="_blank"
-                    className="linkToPage px-2"
-                  >
-                    Odwiedź stronę dla lepszego efektu
-                  </Link>
-                </div>
-                <div className="site-box-vid">
-                  <h3 className="text-center">Efektowność</h3>
-                  <div>
-                    <Image src={LPcarousels} alt="przyklad" />
-                  </div>
-                  <p className="px-4">
-                    Strona{" "}
-                    <Link
-                      href="https://kvcarousel-robfrontend.netlify.app/"
-                      target="_blank"
-                    >
-                      Landing Page
-                    </Link>{" "}
-                    ze specjalnymi dodatkowymi funkcjonalnościami- zmiana
-                    zawartości strony przez kliknięcie na kafelki widoczne w
-                    prawym dolnym rogu (pozwala posiadać więcej
-                    &apos;podstron&apos; zachowując charakter Landing Page).
-                    Odwiedź stronę aby doświadczyć pełni efektów.
-                  </p>
-
-                  <Link
-                    href="https://kvcarousel-robfrontend.netlify.app/"
-                    target="_blank"
-                    className="linkToPage px-2"
-                  >
-                    Odwiedź stronę dla lepszego efektu
-                  </Link>
-                </div>
-              </div> */}
-              <div className="services-boxes-device">
-                <div className="services-box-device">
-                  <Image
-                    src={LPcity}
-                    alt="Strona miasta Los Angeles jako Landing Page"
-                  />
-                  <div className="content-center">
-                    <h3 className="text-center pb-10">Strona Los Angeles</h3>
-                    <p className="">
-                      Strona{" "}
-                      <Link
-                        href="https://city-robfrontend.netlify.app/"
-                        target="_blank"
-                        className="underline"
-                      >
-                        Miasta LA
-                      </Link>{" "}
-                      zawiera:
-                    </p>
-                    <ul className="text-xl p-2">
-                      <li>-nawigację</li>
-                      <li>
-                        -Hero (tutaj jest to główny duży obrazek z tytułem i
-                        odnośnikiem w obrazku)
-                      </li>
-                      <li>-odnośniki do social mediów</li>
-                      <li>
-                        -szablon informacyjny z CTA (&apos;Call To Action&apos;
-                        - zachęcający użytkownika do kliknięcia w link)
-                      </li>
-                      <li>-galerię, mapę google oraz stopkę</li>
-                    </ul>
-                    <p className="text-xl pb-8 pt-2 text-justify">
-                      Odwiedź stronę aby doświadczyć pełni efektów.
-                    </p>
-                    <div className="grid items-center">
-                      <Link
-                        href="https://city-robfrontend.netlify.app/"
-                        target="_blank"
-                        className="linkToPage"
-                      >
-                        Odwiedź Los Angeles
-                      </Link>
+      <section>
+        <RevealingSections goinUp={true}>
+          <div className="container">
+            <h2>Wybierz rozwiązanie dla siebie</h2>
+            <div className="grid grid-cols-3 gap-8 max-lg:grid-cols-2 max-md h-full max-sm:grid-cols-1">
+              <div className="services-box2 p-10 flex flex-col justify-between">
+                <div>
+                  <div className="flex gap-6 mb-6">
+                    <FiMonitor className="h-20 min-w-16" />
+                    <div>
+                      <h3>Landing Page</h3>
+                      <p className="font-semibold mb-2 opacity-90">
+                        Jedna oferta. Jeden konkretny cel.
+                      </p>
                     </div>
                   </div>
-                </div>
-                <div className="services-box-device">
-                  <Image
-                    src={LPkarkonosze}
-                    alt="Strona internetowa Karkonoszy jako Landing Page"
-                  />
-                  <div className="content-center">
-                    <h3 className="text-center pb-10">Strona Karkonoszy</h3>
-                    <p className="">
-                      Strona{" "}
-                      <Link
-                        href="https://karkonosze-robfrontend.netlify.app/"
-                        target="_blank"
-                        className="underline"
-                      >
-                        Karkonoszy
-                      </Link>{" "}
-                      zawiera:
-                    </p>
-
-                    <ul className="text-xl p-2">
-                      <li>-nawigację</li>
-                      <li>
-                        -Hero (brązowe tło z tytułem, podtytułem, przyckiskami
-                        oraz obrazkiem głównym )
-                      </li>
-                      <li>-dwie małe galerie</li>
-                      <li>
-                        -szablon informayjny, szablon z formularzem kontaktowym
-                        oraz stopkę
-                      </li>
-                    </ul>
-                    <p className="text-xl pb-8 pt-2 text-justify">
-                      Odwiedź stronę aby doświadczyć pełni efektów.
-                    </p>
-                    <div className="grid items-center">
-                      <Link
-                        href="https://karkonosze-robfrontend.netlify.app/"
-                        target="_blank"
-                        className="linkToPage"
-                      >
-                        Obejrzyj Karkonosze
-                      </Link>
-                    </div>
+                  <p>
+                    Strona dla jednej usługi, kampani, eksperta lub frimy, która
+                    chce szybko zacząć pozyskiwać zapytania.
+                  </p>
+                  <div className="flex flex-wrap gap-4 my-6">
+                    <span className="bg-[var(--border-color)] px-6 py-2 rounded-full font-semibold mb-2">
+                      1 strona
+                    </span>
+                    <span className="bg-[var(--border-color)] px-6 py-2 rounded-full font-semibold mb-2">
+                      formularz
+                    </span>
+                    <span className="bg-[var(--border-color)] px-6 py-2 rounded-full font-semibold mb-2">
+                      RWD
+                    </span>
+                    <span className="bg-[var(--border-color)] px-6 py-2 rounded-full font-semibold mb-2">
+                      SEO
+                    </span>
                   </div>
                 </div>
-                <div className="services-box-device">
-                  <Image
-                    src={LPportfolio}
-                    alt="Strona Portfolio jako Landing Page"
-                  />
-                  <div className="content-center">
-                    <h3 className="text-center pb-10">
-                      Portfolio Landing Page
-                    </h3>
-                    <p className="">
-                      Strona jednostronicowego{" "}
-                      <Link
-                        href="https://portfolio-robfrontend.netlify.app/"
-                        target="_blank"
-                        className="underline"
-                      >
-                        Portfolio
-                      </Link>{" "}
-                      zawiera:
-                    </p>
-
-                    <ul className="text-xl p-2">
-                      <li>-nawigację</li>
-                      <li>
-                        -Hero (pierwszoplanowy obrazek oraz tytuł i informacje)
-                      </li>
-                      <li>-odnośniki do social mediów</li>
-                      <li>
-                        -przedstawiającą przykładową historię działalności
-                        autora
-                      </li>
-                      <li>-dwie karuzele dla sekcji projektów</li>
-                      <li>-kontakt jako stopkę</li>
-                    </ul>
-                    <p className="text-xl pb-8 pt-2 text-justify">
-                      Odwiedź stronę aby doświadczyć pełni efektów.
-                    </p>
-                    <div className="grid items-center">
-                      <Link
-                        href="https://portfolio-robfrontend.netlify.app/"
-                        target="_blank"
-                        className="linkToPage"
-                      >
-                        Obejrzyj Portfolio
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="services-box-device">
-                  <Image src={LPcarousels} alt="city" />
-                  <div className="content-center">
-                    <h3 className="text-center pb-10">Strona motoryzacji</h3>
-                    <p className="">
-                      Landing Page{" "}
-                      <Link
-                        href="https://kvcarousel-robfrontend.netlify.app/"
-                        target="_blank"
-                        className="underline"
-                      >
-                        motorsportu
-                      </Link>{" "}
-                      zawiera specjalne dodatkowe funkcjonalności:
-                    </p>
-                    <ul className="text-xl p-2">
-                      <li>
-                        -pięć różnych wyglądów strony zachowując strukturę
-                        Landing Page
-                      </li>
-
-                      <li>
-                        -zmiana zawartości strony przez kliknięcie na kafelki
-                        widoczne w prawym dolnym rogu
-                      </li>
-                      <li>-wrażenie posiadania wielu podstron</li>
-                      <li>-dodatkowe efekty</li>
-                    </ul>
-                    <p className="text-xl pb-8 pt-2 text-justify">
-                      Odwiedź stronę aby doświadczyć pełni efektów.
-                    </p>
-                    <div className="grid items-center">
-                      <Link
-                        href="https://kvcarousel-robfrontend.netlify.app/"
-                        target="_blank"
-                        className="linkToPage"
-                      >
-                        Sprawdź Design
-                      </Link>
-                    </div>
-                  </div>
+                <div>
+                  <p className="services-price mb-4">od 2 900 zł</p>
+                  <Link
+                    href="/cennik#landing-page"
+                    className="text-2xl font-semibold mb-2 opacity-80 hover:opacity-100 transition-all duration-200 w-fit"
+                  >
+                    Dowiedz się więcej<span className="pl-3">→</span>
+                  </Link>
                 </div>
               </div>
-            </div>
-          </RevealingSections>
-        </div>
-
-        <div className="pb-32 pt-32 px-8">
-          <RevealingSections goinUp={true}>
-            <div className="container px-8 max-md:px-6">
-              <h2 className="services-pages-h2">Większe strony internetowe</h2>
-              {/* <div className="site-boxes">
-                <div className="site-box-vid">
-                  <h3 className="text-center">Strona z blogiem</h3>
-                  <div>
-              
-                    <Image
-                      src={WSBooks}
-                      alt="Strona internetowa z blogiem i cms"
-                    />
-                  </div>
-                  <p className="px-4">
-                    Strona{" "}
-                    <Link
-                      href="https://www.jeszczestronaalbosto.pl/"
-                      target="_blank"
-                    >
-                      działalności z blogiem
-                    </Link>{" "}
-                    zawiera stronę główną, kilka podstawowych podstron -
-                    podstronę o autorze, współpracę, kontakt z formularzem
-                    e-mailowym - oraz dodatkowo blog. Odwiedź stronę aby
-                    doświadczyć pełni efektów.
-                  </p>
-
-                  <Link
-                    href="https://www.jeszczestronaalbosto.pl/"
-                    target="_blank"
-                    className="linkToPage px-2"
-                  >
-                    Odwiedź stronę dla lepszego efektu
-                  </Link>
-                </div>
-                <div className="site-box-vid">
-                  <h3 className="text-center">Rozbudowane Portfolio</h3>
-                  <div>
-            
-                    <Image
-                      src={WSPortfolio}
-                      alt="rozbudowane portfolio z wieloma podstronami"
-                    />
-                  </div>
-                  <p className="px-4">
-                    Strona{" "}
-                    <Link
-                      href="https://portfolio-robfrontend.vercel.app/"
-                      target="_blank"
-                    >
-                      rozbudowanego Portfolio
-                    </Link>{" "}
-                    zawiera kilka podstron, a zatem bardziej szczegółowo
-                    przedstawione informacje o autorze i jego projektach niż w
-                    przypadku Portfolio typu Landing Page. Odwiedź stronę aby
-                    doświadczyć pełni efektów.
-                  </p>
-
-                  <Link
-                    href="https://portfolio-robfrontend.vercel.app/"
-                    target="_blank"
-                    className="linkToPage px-2"
-                  >
-                    Odwiedź stronę dla lepszego efektu
-                  </Link>
-                </div>
-              </div> */}
-              <div className="services-boxes-device">
-                <div className="services-box-device">
-                  <Image
-                    src={WSBooks}
-                    alt="Strona działalności prowadzenia recenzji z blogiem i CMS"
-                  />
-                  <div className="content-center">
-                    <h3 className="text-center pb-10">Strona z blogiem</h3>
-                    <p className="">
-                      Strona{" "}
-                      <Link
-                        href="https://jeszcze-strona-next.vercel.app/"
-                        target="_blank"
-                        className="underline"
-                      >
-                        działalności z blogiem
-                      </Link>{" "}
-                      zawiera:
-                    </p>
-                    <ul className="text-xl p-2">
-                      <li>-stronę główną</li>
-                      <li>-podstronę o autorze</li>
-                      <li>-blog z panelem edycji treści</li>
-                      <li>-podstronę o współpracy</li>
-                      <li>-kontakt z formularzem e-mailowym</li>
-                    </ul>
-                    <p className="text-xl pb-8 pt-2 text-justify">
-                      Odwiedź stronę aby doświadczyć pełni efektów.
-                    </p>
-                    <div className="grid items-center">
-                      <Link
-                        href="https://jeszcze-strona-next.vercel.app/"
-                        target="_blank"
-                        className="linkToPage"
-                      >
-                        JeszczeStronaAlboSto
-                      </Link>
+              <div className="services-box2 p-10 flex flex-col justify-between">
+                <div>
+                  <div className="flex gap-6 mb-6">
+                    <LuLayers3 className="h-20 min-w-16" />
+                    <div>
+                      <h3>Strona firmowa</h3>
+                      <p className="font-semibold mb-2 opacity-90">
+                        Profesjonalna wizytówka, która pracuje.
+                      </p>
                     </div>
                   </div>
-                </div>
-                <div className="services-box-device">
-                  <Image
-                    src={WSPortfolio}
-                    alt="Portfolio jako strona z kilkoma podstronami"
-                  />
-                  <div className="content-center">
-                    <h3 className="text-center pb-10">Rozbudowane Portfolio</h3>
-                    <p className="">
-                      Strona rozbudowanego{" "}
-                      <Link
-                        href="https://portfolio-robfrontend.vercel.app/"
-                        target="_blank"
-                        className="underline"
-                      >
-                        Portfolio
-                      </Link>{" "}
-                      zawiera:
-                    </p>
-                    <ul className="text-xl p-2">
-                      <li>-stronę główną</li>
-                      <li>-podstronę o projektach wykonanych dla klientów</li>
-                      <li>-podstronę o projektach hoobystycznych</li>
-                      <li>-podstronę z kontaktem</li>
-                    </ul>
-                    <p className="text-xl pb-8 pt-2 text-justify">
-                      Odwiedź stronę aby doświadczyć pełni efektów.
-                    </p>
-                    <div className="grid items-center">
-                      <Link
-                        href="https://portfolio-robfrontend.vercel.app/"
-                        target="_blank"
-                        className="linkToPage"
-                      >
-                        Obejrzyj Portfolio
-                      </Link>
-                    </div>
+                  <p>
+                    Kilka lub kilkanaście podstron prezentujących ofertę,
+                    realizacje i firmę prowadząc użytkownika do kontaktu.
+                  </p>
+                  <div className="flex flex-wrap gap-4 my-6">
+                    <span className="bg-[var(--border-color)] px-6 py-2 rounded-full font-semibold mb-2">
+                      UX/UI
+                    </span>
+                    <span className="bg-[var(--border-color)] px-6 py-2 rounded-full font-semibold mb-2">
+                      SEO
+                    </span>
+                    <span className="bg-[var(--border-color)] px-6 py-2 rounded-full font-semibold mb-2">
+                      analityka
+                    </span>
+                    <span className="bg-[var(--border-color)] px-6 py-2 rounded-full font-semibold mb-2">
+                      formularze
+                    </span>
                   </div>
+                </div>
+                <div>
+                  <p className="services-price mb-4">od 4 900 zł</p>
+                  <Link
+                    href="/cennik#strona-firmowa"
+                    className="text-2xl font-semibold mb-2 opacity-80 hover:opacity-100 transition-all duration-200 w-fit"
+                  >
+                    Dowiedz się więcej<span className="pl-3">→</span>
+                  </Link>
                 </div>
               </div>
-            </div>
-          </RevealingSections>
-        </div>
-
-        <div className="pb-12 pt-32 px-8">
-          <RevealingSections goinUp={true}>
-            <div className="container px-8 max-md:px-6">
-              <h2 className="text-center pb-20">Panele edycji treści</h2>
-              <div className="site-boxes">
-                <div className="site-box-vid">
-                  <h3 className="text-center">Blog z CMS</h3>
-                  <div>
-                    <video controls preload="yes">
-                      <source src="videos/CMSblog.mp4" type="video/mp4" />
-                      Twoja przeglądarka nie obsługuje Video Tagu.
-                    </video>
+              <div className="services-box2 p-10 flex flex-col justify-between">
+                <div>
+                  <div className="flex gap-6 mb-6">
+                    <HiOutlineShoppingCart className="h-20 min-w-16" />
+                    <div>
+                      <h3>Sklep Internetowy</h3>
+                      <p className="font-semibold mb-2 opacity-90">
+                        Sprzedaż online bez komplikacji.
+                      </p>
+                    </div>
                   </div>
-                  <p className="px-4">
-                    Strona{" "}
-                    <Link
-                      href="https://cms-blog-grabcode.netlify.app/blog"
-                      target="_blank"
-                    >
-                      Bloga z własnym CMS
-                    </Link>{" "}
-                    (panelem edycji treści) ukazuje jak samemu dodawać lub
-                    usuwać posty na blogu - wygodna opcja w przypadku dodawania
-                    podobnych postów na blogu (podobna budowa oraz obszerność).
-                    Przetestuj śmiało samemu pod poniższym linkiem (prośba o
-                    kulturalną edycję treści).
+                  <p>
+                    WooCommerce z produktami, płatnościami, dostawą i
+                    konfiguracją najważniejszych elemntów sklepu.
                   </p>
-
-                  <Link
-                    href="https://cms-blog-grabcode.netlify.app/blog"
-                    target="_blank"
-                    className="linkToPage px-2"
-                  >
-                    Odwiedź stronę dla lepszego efektu
-                  </Link>
+                  <div className="flex flex-wrap gap-4 my-6">
+                    <span className="bg-[var(--border-color)] px-6 py-2 rounded-full font-semibold mb-2">
+                      WooCommerce
+                    </span>
+                    <span className="bg-[var(--border-color)] px-6 py-2 rounded-full font-semibold mb-2">
+                      płatności
+                    </span>
+                    <span className="bg-[var(--border-color)] px-6 py-2 rounded-full font-semibold mb-2">
+                      dostawa
+                    </span>
+                    <span className="bg-[var(--border-color)] px-6 py-2 rounded-full font-semibold mb-2">
+                      SEO
+                    </span>
+                  </div>
                 </div>
-                <div className="site-box-vid">
-                  <h3 className="text-center">CMS strony</h3>
-                  <div>
-                    <video controls preload="yes">
-                      <source src="videos/CMSsite.mp4" type="video/mp4" />
-                      Twoja przeglądarka nie obsługuje Video Tagu.
-                    </video>
-                  </div>
-                  <p className="px-4">
-                    Strona z{" "}
-                    <Link
-                      href="https://test-cms-grabcode.vercel.app/"
-                      target="_blank"
-                    >
-                      Panelem edycji treści
-                    </Link>{" "}
-                    ukazuje jak samodzielnie zarządzać treścią na stronie
-                    internetowej. Przetestuj śmiało samemu pod poniższym linkiem
-                    - po kliknięciu &apos;zapisz zmiany&apos; zaczekaj kilka
-                    sekund aby serwer wysłał nowe dane (prośba o kulturalną
-                    edycję treści).
-                  </p>
-
+                <div>
+                  <p className="services-price mb-4">od 5 900 zł</p>
                   <Link
-                    href="https://test-cms-grabcode.vercel.app/"
-                    target="_blank"
-                    className="linkToPage px-2"
+                    href="/cennik#sklep-internetowy"
+                    className="text-2xl font-semibold mb-2 opacity-80 hover:opacity-100 transition-all duration-200 w-fit"
                   >
-                    Odwiedź stronę dla lepszego efektu
+                    Dowiedz się więcej<span className="pl-3">→</span>
                   </Link>
                 </div>
               </div>
             </div>
-          </RevealingSections>
-        </div>
-      </div>
-      <div className="grid justify-center py-2 big-logo w-full">
-        <Biglogotheme />
-      </div>
+          </div>
+        </RevealingSections>
+      </section>
 
-      <Footer />
+      <section>
+        <RevealingSections goinUp={true}>
+          <div className="container">
+            <h2>Landing Page</h2>
+            <div className="grid grid-cols-2 gap-8 max-md h-full max-md:grid-cols-1">
+              <div className="self-center">
+                <h3 className="mb-6">
+                  Skuteczna strona, która zamienia odwiedzających w klientów.
+                </h3>
+                <p className="mb-4">
+                  Projęktuję landing page&apos;e, które przyciągają uwagę,
+                  budują zaufanie i prowadzą do konkretnego działania -
+                  rezerwacji, formularza, telefonu lub zakupu.
+                </p>
+                <ul className="mb-8 flex flex-col gap-2">
+                  <li className="flex gap-4 items-center">
+                    <FaRegCircleCheck className="h-7 w-7" />
+                    <p>Indywidualny, nowoczesny design</p>
+                  </li>
+                  <li className="flex gap-4 items-center">
+                    <FaRegCircleCheck className="h-7 w-7" />
+                    <p>Responsywność na każdym urządzeniu</p>
+                  </li>
+                  <li className="flex gap-4 items-center">
+                    <FaRegCircleCheck className="h-7 w-7" />
+                    <p>Formularz kontaktowy lub rezerwacji</p>
+                  </li>
+                  <li className="flex gap-4 items-center">
+                    <FaRegCircleCheck className="h-7 w-7" />
+                    <p>Podstawowe SEO i analityka</p>
+                  </li>
+                  <li className="flex gap-4 items-center">
+                    <FaRegCircleCheck className="h-7 w-7" />
+                    <p>Szybkie wdrożenie</p>
+                  </li>
+                </ul>
+                <div className="flex gap-8 mb-6 max-sm:flex-col max-sm:items-start">
+                  <Link
+                    href="https://demo-beauty-grabcode.vercel.app/"
+                    className="btn inline-flex items-center"
+                    target="_blank"
+                  >
+                    Zobacz przykład
+                  </Link>
+                  <Link
+                    href="/cennik#landing-page"
+                    className="btn1 inline-flex items-center"
+                  >
+                    Sprawdź w cenniku
+                  </Link>
+                </div>
+              </div>
+              <Image
+                src={Beauty}
+                alt="Landing Page branży beauty"
+                className="max-md:row-start-1"
+              />
+            </div>
+          </div>
+        </RevealingSections>
+      </section>
+
+      <section>
+        <RevealingSections goinUp={true}>
+          <div className="container flex gap-8 max-lg:flex-col">
+            <div>
+              <h2>Porównanie</h2>
+              <div>
+                <h3 className="mb-4">
+                  Landing Page <br></br>czy strona firmowa?
+                </h3>
+                <p className="mb-10">
+                  Nie wiesz, które rozwiązanie będzie lepsze? <br></br>Sprawdź
+                  szybkie porównanie lub skontaktuj się ze mną - doradzę Ci
+                  najlepszą opcję.
+                </p>
+                <Link
+                  href="/kontakt#formularz-kontaktowy"
+                  className="btn inline-flex items-center"
+                >
+                  Umów konsultację
+                </Link>
+              </div>
+            </div>
+            <ServicesTable />
+          </div>
+        </RevealingSections>
+      </section>
+      <section>
+        <RevealingSections goinUp={true}>
+          <div className="container ">
+            <h2>Usługi dodatkowe</h2>
+            <h3>Stronę można rozbudować o to, czego potrzebuje Twój biznes.</h3>
+            <div className="grid grid-cols-4 gap-6 justify-between items-center mt-10 max-lg:grid-cols-2 max-sm:grid-cols-1">
+              <div className="flex gap-6 px-6 py-8 rounded-xl box-shadow h-full">
+                <FiEdit className="min-h-16 min-w-16 text-[var(--accent-color)]" />
+                <div>
+                  <p className="font-semibold mb-2">CMS i blog</p>
+                  <p>
+                    Samodzielnie zmieniaj treści i publikuj artykuły bez
+                    znajomości kodu.
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-6 px-6 py-8 rounded-xl box-shadow h-full">
+                <IoMdSearch className="min-h-16 min-w-16 text-[var(--accent-color)]" />
+                <div>
+                  <p className="font-semibold mb-2">SEO i widoczność</p>
+                  <p>
+                    Technicznie przygotuję stronę pod Google, indeksowanie i
+                    wyszukiwanie lokalne.
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-6 px-6 py-8 rounded-xl box-shadow h-full">
+                <LuPlug className="min-h-16 min-w-16 text-[var(--accent-color)]" />
+                <div>
+                  <p className="font-semibold mb-2">
+                    Integracje i automatyzacje
+                  </p>
+                  <p>
+                    Formularze, rezerwacje, newsletter, płatności i narzędzia,
+                    których używasz w firmie.
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-6 px-6 py-8 rounded-xl box-shadow h-full">
+                <LuShieldCheck className="min-h-16 min-w-16 text-[var(--accent-color)]" />
+                <div>
+                  <p className="font-semibold mb-2">Opieka nad stroną</p>
+                  <p>Aktualizacje, bezpiecezństwo i wsparcie po wdrożeniu.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </RevealingSections>
+      </section>
+
+      <section>
+        <RevealingSections goinUp={true}>
+          <div className="container ">
+            <h2>Branże</h2>
+            <h3>Inna branża. Inne potrzeby.</h3>
+            <p>Projektuję strony dopasowane do specyfiki Twojej branży.</p>
+            <div className="grid grid-cols-4 gap-8 mt-10 max-md:grid-cols-2 max-sm:grid-cols-1">
+              <div className="relative grid min-h-[15rem] rounded-xl overflow-hidden boxGradient">
+                <div className="self-end p-6">
+                  <p className="textWhite font-semibold">Beauty</p>
+                  <p className="textWhite">
+                    Oferta, efekty, opinie <br className="max-md:hidden"></br>i
+                    rezerwacja.
+                  </p>
+                </div>
+                <Image
+                  alt="Beauty"
+                  src={BeautyGrid}
+                  fill
+                  className="absolute -z-10 object-cover object-center"
+                />
+              </div>
+              <div className="relative grid min-h-[15rem] rounded-xl overflow-hidden boxGradient">
+                <div className="self-end p-6">
+                  <p className="textWhite font-semibold">Trenerzy i fitness</p>
+                  <p className="textWhite">
+                    Marka eksperta, metamorfozy, konsultacje
+                  </p>
+                </div>
+                <Image
+                  alt="Trenerzy i fitness"
+                  src={PersonalGrid}
+                  fill
+                  className="absolute -z-10 object-cover object-center"
+                />
+              </div>
+              <div className="relative grid min-h-[15rem] rounded-xl overflow-hidden boxGradient">
+                <div className="self-end p-6">
+                  <p className="textWhite font-semibold">Budownictwo</p>
+                  <p className="textWhite">
+                    Deklaracja, case study, formularz wyceny.
+                  </p>
+                </div>
+                <Image
+                  alt="Budownictwo"
+                  src={BuildGrid}
+                  fill
+                  className="absolute -z-10 object-cover object-center"
+                />
+              </div>
+              <div className="relative grid min-h-[15rem] rounded-xl overflow-hidden boxGradient">
+                <div className="self-end p-6">
+                  <p className="textWhite font-semibold">Firmy i B2B</p>
+                  <p className="textWhite">
+                    Oferta, kompetencje, <br className="max-md:hidden"></br>lead
+                    generation.
+                  </p>
+                </div>
+                <Image
+                  alt="Firmy i B2B"
+                  src={B2bGrid}
+                  fill
+                  className="absolute -z-10 object-cover object-center"
+                />
+              </div>
+            </div>
+          </div>
+        </RevealingSections>
+      </section>
+
+      <section>
+        <RevealingSections goinUp={true}>
+          <div className="container ">
+            <h2>Jak wygląda współpraca</h2>
+            <h3>Prosty proces. Jasne zasady</h3>
+            <div className="grid grid-cols-3 gap-10 mt-10 max-md:grid-cols-2 max-sm:grid-cols-1">
+              <div>
+                <p className="text-[var(--accent-color)] mb-4">01</p>
+                <div className="flex gap-4">
+                  <LuNotebookPen className="h-12 w-auto" />
+                  <div>
+                    <p className="font-semibold mb-1">Poznajemy cel</p>
+                    <p>
+                      Rozmawiamy o Twoich potrzebach <br></br>i oczekiwaniach.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p className="text-[var(--accent-color)] mb-4">02</p>
+                <div className="flex gap-4">
+                  <LuMessagesSquare className="h-12 w-auto" />
+                  <div>
+                    <p className="font-semibold mb-1">Ustalamy zakres</p>
+                    <p>
+                      Proponuję rozwiązanie, <br></br>termin i wycenę.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p className="text-[var(--accent-color)] mb-4">03</p>
+                <div className="flex gap-4">
+                  <AiOutlineFundProjectionScreen className="h-12 w-auto" />
+                  <div>
+                    <p className="font-semibold mb-1">Projektuję design</p>
+                    <p>
+                      Tworzę strukturę i projekt <br></br>graficzny strony.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p className="text-[var(--accent-color)] mb-4">04</p>
+                <div className="flex gap-4">
+                  <IoConstructOutline className="h-12 w-auto" />
+                  <div>
+                    <p className="font-semibold mb-1">Buduję i testuję</p>
+                    <p>
+                      Tworzę stronę, dbam o jakość<br></br>i responsywność.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p className="text-[var(--accent-color)] mb-4">05</p>
+                <div className="flex gap-4">
+                  <MdOutlineFileUpload className="h-12 w-auto" />
+                  <div>
+                    <p className="font-semibold mb-1">Publikacja i wsparcie</p>
+                    <p>
+                      Uruchamiam stronę i zapewniam <br></br>dalszą opiekę.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </RevealingSections>
+      </section>
+
+      <section>
+        <RevealingSections goinUp={true}>
+          <div className="container ">
+            <h2>Technologie</h2>
+            <h3>Narzędzia dobieram do projektu.</h3>
+            <p>
+              Nie dlatego, że są modne, ale dlatego, że najlepiej sprawdzają się
+              w danym przypadku.
+            </p>
+            <div className="flex gap-6 justify-between mt-10 max-md:grid max-md:grid-cols-4 max-sm:grid-cols-2">
+              <div className="flex gap-3 items-center">
+                <SiNextdotjs className="h-10 w-auto text-[var(--accent-color)]" />
+                <p>Next.js</p>
+              </div>
+              <div className="flex gap-3 items-center">
+                <FaReact className="h-10 w-auto text-[var(--accent-color)]" />
+                <p>React</p>
+              </div>
+              <div className="flex gap-3 items-center">
+                <SiTypescript className="h-10 w-auto text-[var(--accent-color)]" />
+                <p>TypeScript</p>
+              </div>
+              <div className="flex gap-3 items-center">
+                <SiTailwindcss className="h-10 w-auto text-[var(--accent-color)]" />
+                <p>Tailwind CSS</p>
+              </div>
+              <div className="flex gap-3 items-center">
+                <SiSanity className="h-10 w-auto text-[var(--accent-color)]" />
+                <p>Sanity</p>
+              </div>
+              <div className="flex gap-3 items-center">
+                <SiWordpress className="h-10 w-auto text-[var(--accent-color)]" />
+                <p>Wordpress</p>
+              </div>
+              <div className="flex gap-3 items-center">
+                <SiWoocommerce className="h-10 w-auto text-[var(--accent-color)]" />
+                <p>Woocommerce</p>
+              </div>
+            </div>
+          </div>
+        </RevealingSections>
+      </section>
+
+      <section>
+        <RevealingSections goinUp={true}>
+          <div className="container">
+            <div className="flex gap-12 justify-between max-xl:gap-10 max-[1100px]:flex-col">
+              <div>
+                <h2>Ceny od</h2>
+                <h3>Ile kosztuje projekt?</h3>
+                <p>
+                  Każdy projekt wyceniam indywidualnie, <br></br>ale warto
+                  spojrzeć na ceny startowe.
+                </p>
+              </div>
+              <div className="[1100px]:self-end flex gap-8 justify-between max-xl:gap-6 max-md:grid max-md:grid-cols-2">
+                <div className="py-6 px-12 bg-[var(--border-color)] rounded-xl">
+                  <p className="font-semibold">Landing Page</p>
+                  <p className="text-[2.4rem] font-bold">od 2 500 zł</p>
+                </div>
+                <div className="py-6 px-12 bg-[var(--border-color)] rounded-xl">
+                  <p className="font-semibold">Strona firmowa</p>
+                  <p className="text-[2.4rem] font-bold">od 3 500 zł</p>
+                </div>
+                <div className="py-6 px-12 bg-[var(--border-color)] rounded-xl">
+                  <p className="font-semibold">Rozbudowany serwis</p>
+                  <p className="text-[2.4rem] font-bold">od 4 500 zł</p>
+                </div>
+                <div className="py-6 px-12 bg-[var(--border-color)] rounded-xl">
+                  <p className="font-semibold">Sklep internetowy</p>
+                  <p className="text-[2.4rem] font-bold">od 4 500 zł</p>
+                </div>
+              </div>
+            </div>
+            <div className="grid mt-12">
+              <Link
+                href="/cennik"
+                className="btn btn-box inline-flex items-center justify-self-end"
+              >
+                Zobacz pełny cennik
+              </Link>
+            </div>
+          </div>
+        </RevealingSections>
+      </section>
+
+      <section>
+        <RevealingSections goinUp={true}>
+          <div className="container">
+            <h2>Najczęściej zadawane pytania</h2>
+            <h3>Masz pytania? Sprawdź odpowiedzi.</h3>
+            <Faq />
+          </div>
+        </RevealingSections>
+      </section>
+
+      <RevealingSections goinUp={true}>
+        <HomeCta />
+      </RevealingSections>
     </>
   );
 }

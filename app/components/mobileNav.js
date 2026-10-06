@@ -29,13 +29,16 @@ function MobileNav() {
               <Link href="/uslugi">Usługi</Link>
             </li>
             <li>
-              <Link href="/dlaczegoja">Dlaczego ja</Link>
+              <Link href="/realizacje">Realizacje</Link>
             </li>
             <li>
               <Link href="/cennik">Cennik</Link>
             </li>
             <li>
-              <Link href="/#kontakt">Kontakt</Link>
+              <Link href="/o-mnie">O mnie</Link>
+            </li>
+            <li>
+              <Link href="/kontakt">Kontakt</Link>
             </li>
           </ul>
         </nav>

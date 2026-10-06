@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import IconWhite from "@/public/logowhiteround.png";
-import IconNavy from "@/public/logonavyround.png";
+import IconWhite from "@/public/logo3New.png";
+import IconNavy from "@/public/logo3NewWhite.png";
 import { useEffect, useState } from "react";
 import { useTheme } from "../context/ThemeContext";
 function Logotheme() {
