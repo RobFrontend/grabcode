@@ -17,7 +17,7 @@
     "multiparty": "^4.2.3",
     "next": "^16.0.10",
     "next-video": "^2.0.4",
-    "nodemailer": "^6.10.1",
+    "nodemailer": "^10.0.15",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "react-hook-form": "^7.54.2",
