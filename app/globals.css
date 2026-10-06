@@ -4,12 +4,12 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@theme inline {
+/* @theme inline {
   --color-font: var(--font-color);
   --color-background: var(--background-color);
   --color-background-opacity: var(--background-color-opacity);
   --accent-color: var(--accent-color);
-}
+} */
 /* 
 
 Bialy (#F8F9FA) 
