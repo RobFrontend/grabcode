@@ -42,7 +42,7 @@ function page() {
             <h2>Wybrane realizacje dla klientów</h2>
             <RevealingSections delay={200}>
               <div className="grid grid-cols-2 gap-16 px-4 max-lg:grid-cols-1 max-lg:gap-2">
-                <Image alt="Verk Group" src={Verk} />
+                <Image alt="Strona internetowa Verk Group" src={Verk} />
                 <div className="py-4 flex flex-col justify-between">
                   <div>
                     <p className="text-[var(--accent-color)] font-semibold">
@@ -160,7 +160,10 @@ function page() {
             <div className="grid grid-cols-3 gap-8 h-full max-lg:grid-cols-2 max-md:grid-cols-1 max-md:gap-16">
               <div className="flex flex-col justify-between">
                 <div>
-                  <Image alt="Nordom" src={NORDOM} />
+                  <Image
+                    alt="Projekt koncepcyjny dla branży budowlanej"
+                    src={NORDOM}
+                  />
                   <p className="uppercase text-[1.2rem] font-semibold text-[var(--accent-color)]">
                     Projekt koncepcyjny
                   </p>
@@ -202,7 +205,10 @@ function page() {
               </div>
               <div className="flex flex-col justify-between">
                 <div>
-                  <Image alt="Nordom" src={BEAUTY} />
+                  <Image
+                    alt="Projekt koncepcyjny dla branży beauty, właścicielki salonu kosmetycznego, brwi i rzęsy"
+                    src={BEAUTY}
+                  />
                   <p className="uppercase text-[1.2rem] font-semibold text-[var(--accent-color)]">
                     Projekt koncepcyjny
                   </p>
@@ -241,7 +247,10 @@ function page() {
               </div>
               <div className="flex flex-col justify-between">
                 <div>
-                  <Image alt="Nordom" src={PERSONAL} />
+                  <Image
+                    alt="Projekt koncepcyjny dla branży fitness, trenera personalnego i trenerki personalnej"
+                    src={PERSONAL}
+                  />
                   <p className="uppercase text-[1.2rem] font-semibold text-[var(--accent-color)]">
                     Projekt koncepcyjny
                   </p>

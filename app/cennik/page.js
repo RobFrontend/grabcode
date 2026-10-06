@@ -371,7 +371,10 @@ function Page() {
                 </p>
               </div>
               <div className="max-sm:row-start-1">
-                <Image alt="sklep internetowy" src={ShopDemo} />
+                <Image
+                  alt="Projekt sklepu internetowego WooCommerce prezentowany na komputerze i telefonie"
+                  src={ShopDemo}
+                />
               </div>
             </div>
           </div>

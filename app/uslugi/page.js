@@ -253,7 +253,7 @@ function Page() {
               </div>
               <Image
                 src={Beauty}
-                alt="Landing Page branży beauty"
+                alt="Landing Page branży beauty, właścicielki salonu kosmetycznego, brwi i rzęsy"
                 className="max-md:row-start-1"
               />
             </div>
@@ -353,7 +353,7 @@ function Page() {
                   </p>
                 </div>
                 <Image
-                  alt="Beauty"
+                  alt="Branża Beauty, salon kosmetyczny"
                   src={BeautyGrid}
                   fill
                   className="absolute -z-10 object-cover object-center"
@@ -367,7 +367,7 @@ function Page() {
                   </p>
                 </div>
                 <Image
-                  alt="Trenerzy i fitness"
+                  alt="Trenerzy personalni i cała branża fitness, dietetycy"
                   src={PersonalGrid}
                   fill
                   className="absolute -z-10 object-cover object-center"
@@ -381,7 +381,7 @@ function Page() {
                   </p>
                 </div>
                 <Image
-                  alt="Budownictwo"
+                  alt="Branża budowlana, budowa domów, budowa apartamentów"
                   src={BuildGrid}
                   fill
                   className="absolute -z-10 object-cover object-center"
@@ -396,7 +396,7 @@ function Page() {
                   </p>
                 </div>
                 <Image
-                  alt="Firmy i B2B"
+                  alt="Firmy i B2B, małe działalności, średnie działalności"
                   src={B2bGrid}
                   fill
                   className="absolute -z-10 object-cover object-center"

@@ -72,7 +72,7 @@ function Hero() {
       <RevealingSections>
         <Image
           src={ROB}
-          alt="Robert"
+          alt="Robert Grabowski, twórca GrabCode Studio"
           loeading="lazy"
           className="lg:hidden max-h-[60rem] w-auto mx-auto max-sm:max-h-[40rem] justify-self-end"
         />
@@ -82,7 +82,7 @@ function Hero() {
         <Image
           src={ROB}
           loading="lazy"
-          alt="Robert"
+          alt="Robert Grabowski, twórca GrabCode Studio"
           className="absolute bottom-0 max-h-[70%] w-auto right-[2%] max-2xl:max-h-[60%] max-2xl:right-[0%] -z-10 max-lg:max-h-[30%] max-md:max-h-[25%] max-lg:right-[50%] max-lg:translate-x-1/2 max-sm:z-10 max-lg:hidden"
         />
       </RevealingSections>

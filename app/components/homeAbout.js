@@ -16,7 +16,7 @@ function HomeAbout() {
           <div className="portfolio-box grid">
             <Image
               src={Rob}
-              alt="portoflio projekty grabcode studio robert grabowski tworzenie stron internetowych Konin Poznan Warszawa Legionowo"
+              alt="portoflio projekty grabcode studio robert grabowski tworzenie stron internetowych Konin, Nowy Dwór Mazowiecki, Pomiechówek"
               className="max-h-[90%] w-auto self-end"
             />
           </div>

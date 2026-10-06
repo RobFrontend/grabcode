@@ -139,7 +139,7 @@ function Page() {
                 </div>
               </div>
               <Image
-                alt="Robert Grabowski"
+                alt="Robert Grabowski, twórca GrabCode Studio"
                 src={RobIMG}
                 className="max-lg:row-start-1 max-lg:max-w-[40rem] max-lg:h-auto max-lg:justify-self-center"
               />
@@ -305,7 +305,7 @@ function Page() {
                   </div>
                 </div>
                 <Image
-                  alt="Samsung"
+                  alt="Doświadczenie z Samsung"
                   src={SamsungExp}
                   fill
                   className="absolute -z-10 object-bottom object-cover"
@@ -402,7 +402,7 @@ function Page() {
                   </Link>
                 </div>
                 <div className="flex flex-col justify-between gap-2 gridColStart">
-                  <Image alt="Verk Group" src={Verk} />
+                  <Image alt="Strona internetowa Verk Group" src={Verk} />
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-2 p-6 box-shadow rounded-xl gridCol1">
@@ -425,7 +425,10 @@ function Page() {
                   </Link>
                 </div>
                 <div className="flex flex-col justify-between gap-2 gridColStart">
-                  <Image alt="JeszczeStronaAlboSto" src={JeszczeStrona} />
+                  <Image
+                    alt="Strona internetowa JeszczeStronaAlboSto"
+                    src={JeszczeStrona}
+                  />
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-2 p-6 box-shadow rounded-xl gridCol1">
@@ -448,7 +451,10 @@ function Page() {
                   </Link>
                 </div>
                 <div className="flex flex-col justify-between gap-2 gridColStart">
-                  <Image alt="Robson" src={Robson} />
+                  <Image
+                    alt="Strona internetowa Robson Fotobudka"
+                    src={Robson}
+                  />
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-2 p-6 box-shadow rounded-xl gridCol1">
@@ -473,7 +479,7 @@ function Page() {
                   </Link>
                 </div>
                 <div className="flex flex-col justify-between gap-2 gridColStart">
-                  <Image alt="BalanceBook" src={Balance} />
+                  <Image alt="Strona internetowa BalanceBook" src={Balance} />
                 </div>
               </div>
             </div>
