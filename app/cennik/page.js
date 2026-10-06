@@ -143,7 +143,7 @@ function Page() {
                 className="services-box3 p-10 flex flex-col justify-between relative"
                 id="strona-firmowa"
               >
-                <p className="absolute -top-5 left-16 -translate-1/2 textWhite bg-[var(--accent-color)] px-4 py-1 rounded-xl font-semibold">
+                <p className="absolute top-0 left-[50%] -translate-1/2 textWhite bg-[var(--accent-color)] px-4 py-1 rounded-xl font-semibold">
                   Najczęściej wybierana
                 </p>
                 <div>
