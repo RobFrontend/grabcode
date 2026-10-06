@@ -29,13 +29,6 @@ export function CookieProvider({ children }) {
       ad_user_data: marketing ? "granted" : "denied",
       ad_personalization: marketing ? "granted" : "denied",
     });
-
-    console.log("Google Consent updated:", {
-      analytics_storage: analytics ? "granted" : "denied",
-      ad_storage: marketing ? "granted" : "denied",
-      ad_user_data: marketing ? "granted" : "denied",
-      ad_personalization: marketing ? "granted" : "denied",
-    });
   };
 
   // Odczyt zapisanej zgody przy wejściu na stronę
