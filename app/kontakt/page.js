@@ -32,7 +32,7 @@ function page() {
             Porozmawiajmy <br></br>o
             <span className="drop-shadow-sm heroh1"> Twojej stronie.</span>
           </h1>
-          <p className="p-large">
+          <p className="p-large heroPLarge">
             Opowiedz mi krótko o swoim biznesie i pomyśle na stronę. <br></br>
             Odpowiem z pytaniami, propozycją rozwiązania lub wstępną wyceną.
           </p>
