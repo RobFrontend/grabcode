@@ -488,6 +488,11 @@ footer ul li {
   font-size: 3.2rem;
   color: var(--accent-color);
   font-weight: 600;
+  line-height: 1.2;
+}
+.services-price span {
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 .p-superLarge {
@@ -1232,9 +1237,11 @@ footer ul li {
   width: 100%;
   overflow-x: auto;
 
-  border: 1px solid #e2e6ea;
+  /* border: 1px solid #e2e6ea; */
+  border: 1px solid var(--border-color);
   border-radius: 1.5rem;
-  background: #f8f9fa;
+  /* background: #f8f9fa; */
+  background: var(--background-color);
 }
 
 .comparison-table {
@@ -1244,7 +1251,8 @@ footer ul li {
   border-collapse: separate;
   border-spacing: 0;
 
-  color: #1d3557;
+  /* color: #1d3557; */
+  color: var(--font-color);
   font-size: 14px;
 }
 
@@ -1255,10 +1263,11 @@ footer ul li {
   font-weight: 700;
   text-align: center;
 
-  background: #f8f9fa;
+  /* background: #f8f9fa; */
+  background: var(--background-color);
 
-  border-right: 1px solid #e2e6ea;
-  border-bottom: 1px solid #e2e6ea;
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .comparison-table thead th:first-child {
@@ -1274,10 +1283,11 @@ footer ul li {
 
   text-align: center;
 
-  border-right: 1px solid #e2e6ea;
-  border-bottom: 1px solid #e2e6ea;
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 
-  background: rgba(255, 255, 255, 0.45);
+  /* background: rgba(255, 255, 255, 0.45); */
+  background: var(--bg-opacity);
 }
 
 .comparison-table tbody td:first-child {
@@ -1296,7 +1306,7 @@ footer ul li {
 .comparison-table .check {
   font-size: 18px;
   font-weight: 700;
-  color: #1d3557;
+  color: var(--font-color);
 }
 
 .comparison-table .dash {

@@ -105,7 +105,10 @@ function Page() {
                   </div>
                 </div>
                 <div>
-                  <p className="services-price mb-4">od 2 900 zł</p>
+                  <p className="services-price">od 2 900 zł</p>
+                  <p className="mb-4 text-sm opacity-80">
+                    *Mniejsze realizacje wyceniam indywidualnie.
+                  </p>
                   <Link
                     href="/cennik#landing-page"
                     className="text-2xl font-semibold mb-2 opacity-80 hover:opacity-100 transition-all duration-200 w-fit"
@@ -145,7 +148,10 @@ function Page() {
                   </div>
                 </div>
                 <div>
-                  <p className="services-price mb-4">od 4 900 zł</p>
+                  <p className="services-price">od 4 900 zł</p>
+                  <p className="mb-4 text-sm opacity-80">
+                    *Mniejsze realizacje wyceniam indywidualnie.
+                  </p>
                   <Link
                     href="/cennik#strona-firmowa"
                     className="text-2xl font-semibold mb-2 opacity-80 hover:opacity-100 transition-all duration-200 w-fit"
@@ -185,7 +191,10 @@ function Page() {
                   </div>
                 </div>
                 <div>
-                  <p className="services-price mb-4">od 5 900 zł</p>
+                  <p className="services-price">od 5 900 zł</p>
+                  <p className="mb-4 text-sm opacity-80">
+                    *Mniejsze realizacje wyceniam indywidualnie.
+                  </p>
                   <Link
                     href="/cennik#sklep-internetowy"
                     className="text-2xl font-semibold mb-2 opacity-80 hover:opacity-100 transition-all duration-200 w-fit"
@@ -530,25 +539,28 @@ function Page() {
                 <h3>Ile kosztuje projekt?</h3>
                 <p>
                   Każdy projekt wyceniam indywidualnie, <br></br>ale warto
-                  spojrzeć na ceny startowe.
+                  spojrzeć na najczęstsze ceny.
+                </p>
+                <p className="mt-1 text-sm opacity-80">
+                  *Mniejsze realizacje wyceniam indywidualnie.
                 </p>
               </div>
               <div className="[1100px]:self-end flex gap-8 justify-between max-xl:gap-6 max-md:grid max-md:grid-cols-2">
                 <div className="py-6 px-12 bg-[var(--border-color)] rounded-xl">
                   <p className="font-semibold">Landing Page</p>
-                  <p className="text-[2.4rem] font-bold">od 2 500 zł</p>
+                  <p className="text-[2.4rem] font-bold">od 2 900 zł</p>
                 </div>
                 <div className="py-6 px-12 bg-[var(--border-color)] rounded-xl">
                   <p className="font-semibold">Strona firmowa</p>
-                  <p className="text-[2.4rem] font-bold">od 3 500 zł</p>
+                  <p className="text-[2.4rem] font-bold">od 4 900 zł</p>
                 </div>
                 <div className="py-6 px-12 bg-[var(--border-color)] rounded-xl">
                   <p className="font-semibold">Rozbudowany serwis</p>
-                  <p className="text-[2.4rem] font-bold">od 4 500 zł</p>
+                  <p className="text-[2.4rem] font-bold">od 7 900 zł</p>
                 </div>
                 <div className="py-6 px-12 bg-[var(--border-color)] rounded-xl">
                   <p className="font-semibold">Sklep internetowy</p>
-                  <p className="text-[2.4rem] font-bold">od 4 500 zł</p>
+                  <p className="text-[2.4rem] font-bold">od 5 900 zł</p>
                 </div>
               </div>
             </div>

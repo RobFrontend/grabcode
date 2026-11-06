@@ -71,6 +71,7 @@ function Page() {
           <RevealingSections goinUp={true}>
             <h2>Główna oferta</h2>
             <h3>Wybierz rozwiązanie dopasowane do Twoich potrzeb.</h3>
+            <p>*Mniejsze realizacje wyceniam indywidualnie.</p>
             <div className="grid grid-cols-3 gap-8 max-lg:grid-cols-2 max-md h-full max-sm:grid-cols-1 mt-10">
               <div
                 className="services-box2 p-10 flex flex-col justify-between"
@@ -86,7 +87,11 @@ function Page() {
                       </p>
                     </div>
                   </div>
-                  <p className="services-price mb-4">od 2 900 zł</p>
+                  <p className="services-price mb-12">
+                    <span>Najczęściej</span>
+                    <br></br>
+                    od 2 900 zł
+                  </p>
                   <ul className="my-6 flex flex-col gap-2">
                     <li className="flex gap-4 items-center">
                       <FaRegCircleCheck className="min-h-7 min-w-7 self-start mt-[1px] text-[var(--accent-color)]" />
@@ -157,7 +162,10 @@ function Page() {
                       </p>
                     </div>
                   </div>
-                  <p className="services-price mb-4">od 4 900 zł</p>
+                  <p className="services-price mb-12">
+                    <span>Typowy projekt</span> <br></br>
+                    od 4 900 zł
+                  </p>
                   <ul className="my-6 flex flex-col gap-2">
                     <li className="flex gap-4 items-center">
                       <FaRegCircleCheck className="min-h-7 min-w-7 self-start mt-[1px] text-[var(--accent-color)]" />
@@ -236,7 +244,10 @@ function Page() {
                       </p>
                     </div>
                   </div>
-                  <p className="services-price mb-4">od 7 900 zł</p>
+                  <p className="services-price mb-12">
+                    <span>Z reguły</span>
+                    <br></br>od 7 900 zł
+                  </p>
                   <ul className="my-6 flex flex-col gap-2">
                     <li className="flex gap-4 items-center">
                       <FaRegCircleCheck className="min-h-7 min-w-7 self-start mt-[1px] text-[var(--accent-color)]" />

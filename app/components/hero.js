@@ -15,7 +15,7 @@ function Hero() {
         <div className="px-[128px] max-2xl:px-[80px] max-xl:px-[48px] pb-8 borderr max-sm:mt-[96px] max-sm:px-8">
           <div>
             <p className="hero-p tracking-tight">
-              Strony, które pracują dla Twojego biznesu
+              JA, które pracują dla Twojego biznesu
             </p>
 
             <h1 className="mb-12 max-sm:mb-8 heroh1">
